@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select-player {
+  @apply p-2;
+}
+.pickImg {
+  background-size: 241%;
+  background-position: 52% 28%;
+  background-repeat: no-repeat;
+}
+.pickImgEmpty {
+  background-size: 100%;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banImg {
+  background-size: 360%;
+  background-position: 51% 27%;
+  background-repeat: no-repeat;
+}
+
+.banImgEmpty {
+  background-size: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0) !important;
+}
+
+.background-draft {
+  background: rgb(0, 0, 84);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 84, 1) 30%,
+    rgba(103, 0, 0, 1) 70%
+  );
+}
