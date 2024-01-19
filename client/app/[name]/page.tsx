@@ -6,9 +6,10 @@ import champions from "../../public/champions/champion-summary.json" assert { ty
 import PickImage from "@/app/components/pickImage";
 import BanImage from "@/app/components/banImage";
 import { Howl } from "howler";
+import { useRouter } from "next/router";
 const socket: Socket = io("http://localhost:3001", {});
 // const socket: Socket = io("https://backend-efmleague.onrender.com", {});
-const url = window.location.href;
+const url = typeof window !== "undefined" ? window.location.href : "";
 const startIndex = url.lastIndexOf("/");
 const endIndex = url.indexOf("$");
 
