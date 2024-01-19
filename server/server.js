@@ -14,8 +14,8 @@ const server = http.createServer(app);
 // Il codice del tuo server Socket.IO
 const io = new Server(server, {
   cors: {
-    // origin: "https://www.efmleague.com",
-    origin: "http://localhost:3000",
+    origin: "https://draft.easyforme.it/",
+    // origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
