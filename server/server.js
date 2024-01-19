@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // Il codice del tuo server Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: "https://draft.easyforme.it/",
+    origin: "https://easyforme.it",
     // origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },

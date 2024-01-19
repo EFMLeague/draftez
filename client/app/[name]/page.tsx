@@ -6,7 +6,7 @@ import champions from "../../public/champions/champion-summary.json" assert { ty
 import PickImage from "@/app/components/pickImage";
 import BanImage from "@/app/components/banImage";
 import { Howl } from "howler";
-import { useRouter } from "next/router";
+
 // const socket: Socket = io("http://localhost:3001", {});
 const socket: Socket = io("https://draftez.onrender.com", {});
 const url = typeof window !== "undefined" ? window.location.href : "";
@@ -15,8 +15,7 @@ const endIndex = url.indexOf("$");
 
 var room = url.substring(startIndex + 1, endIndex + 1);
 var passwordSide = url.substring(endIndex + 1);
-console.log(passwordSide);
-console.log(room);
+
 if (room.length) socket.emit("join_room", { room, passwordSide });
 
 export default function page() {
