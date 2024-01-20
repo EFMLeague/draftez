@@ -30,10 +30,65 @@
 }
 
 .background-draft {
-  background: rgb(0, 0, 84);
+  background: rgb(0, 0, 255);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 84, 1) 30%,
-    rgba(103, 0, 0, 1) 70%
+    rgba(0, 0, 255, 1) 6%,
+    rgba(5, 0, 83, 1) 28%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(92, 0, 0, 1) 72%,
+    rgba(255, 0, 0, 1) 94%
   );
+}
+
+.background-draft-to-red {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 6%,
+    rgba(5, 0, 83, 1) 28%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(92, 0, 0, 1) 72%,
+    rgba(255, 0, 0, 1) 94%
+  );
+  background-size: 200% 200%;
+  animation: gradient-to-red 1s ease forwards;
+  height: 100vh;
+}
+
+.background-draft-to-blue {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 6%,
+    rgba(5, 0, 83, 1) 28%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(92, 0, 0, 1) 72%,
+    rgba(255, 0, 0, 1) 94%
+  );
+  background-size: 200% 200%;
+  animation: gradient-to-blue 1s ease forwards;
+  height: 100vh;
+}
+
+@keyframes gradient-to-red {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-to-blue {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -37,7 +37,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-white h-screen flex justify-center items-center">
+    <div className="bg-white h-screen flex justify-center items-center background-draft text-white">
       {created === false ? (
         <div>
           <div>

@@ -24,6 +24,7 @@ export default function page() {
   const [singleChampion, setSingleChampion] = useState("");
   const [selectedRole, setSelectedRole] = useState("");
   const [block, setBlock] = useState(false);
+
   const version = "14.1.1";
   type Champion = {
     id: number;
@@ -33,7 +34,6 @@ export default function page() {
     roles: string[];
     rolesPlayed: string[];
   };
-
   const championsData: Champion[] = champions;
 
   const extractID = (champ: string) => {
@@ -151,6 +151,7 @@ export default function page() {
     }
     setSingleChampion("");
   }, [messageReceived.phase]);
+
   useEffect(() => {
     socket.on("message_received", (data) => {
       setMessageReceived({
@@ -184,6 +185,7 @@ export default function page() {
       if (data.blue === passwordSide) setSide("blue");
       if (data.red === passwordSide) setSide("red");
     });
+    console.log(side);
   }, [socket]);
 
   useEffect(() => {
@@ -272,6 +274,18 @@ export default function page() {
       } else return false;
     }
   };
+  const turnSide = () => {
+    if (
+      messageReceived.phase === 20 ||
+      (messageReceived.phase === 0 && messageReceived.started === "false")
+    ) {
+      return "stall";
+    } else {
+      if ([0, 2, 4, 6, 9, 10, 13, 15, 17, 18].includes(messageReceived.phase)) {
+        return "blue";
+      } else return "red";
+    }
+  };
 
   const checkChampionPicked = (championName: string) => {
     return (
@@ -316,7 +330,16 @@ export default function page() {
     else setSelectedRole(role);
   };
   return (
-    <div className="h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap bg-zinc-700">
+    <div
+      className={
+        "h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap transition-all " +
+        (turnSide() === "stall"
+          ? " background-draft"
+          : turnSide() === "red"
+          ? "background-draft-to-red"
+          : "background-draft-to-blue")
+      }
+    >
       <div className="my-4 w-full flex justify-between py-4">
         <div className="basis-1/5 bg-slate-200">
           <p className="text-[2rem] px-4 font-bold text-blue-950">
@@ -446,7 +469,7 @@ export default function page() {
                     "h-[110px] w-[110px] hover:cursor-pointer m-1 " +
                     (checkChampionPicked(champion.alias) ? "grayscale " : "")
                   }
-                  key={champion}
+                  key={champion.alias}
                   onClick={() => {
                     if (
                       checkPhaseImage() === true &&
