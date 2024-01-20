@@ -340,14 +340,14 @@ export default function page() {
           : "background-draft-to-blue")
       }
     >
-      <div className="my-4 w-full flex justify-between py-4">
+      <div className="my-4 w-full flex justify-between ">
         <div className="basis-1/5 bg-slate-200">
-          <p className="text-[2rem] px-4 font-bold text-blue-950">
+          <p className="text-[2.5rem] px-4 font-bold text-blue-950">
             {messageReceived.draftNames.teamBlue}
           </p>
         </div>
         <div className="basis-1/5 bg-slate-200">
-          <p className="text-[2rem] text-end px-4 font-bold text-red-950">
+          <p className="text-[2.5rem] text-end px-4 font-bold text-red-950">
             {messageReceived.draftNames.teamRed}
           </p>
         </div>
@@ -372,7 +372,7 @@ export default function page() {
           ></PickImage>
         </div>
         <div className="basis-3/5 ">
-          <div className="flex justify-between items-center relative px-4">
+          <div className="flex justify-between items-center relative px-10">
             <div className="flex">
               <Image
                 src={"/roles/top.png"}
@@ -453,7 +453,7 @@ export default function page() {
                 placeholder="Filtra per nome"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="h-9 border border-black"
+                className="h-9 border border-black font-bold text-[1.5rem]"
               />
             </div>
           </div>
@@ -524,7 +524,7 @@ export default function page() {
         </div>
         <div className=" h-full flex justify-center items-center ">
           <button
-            className="p-4 bg-white w-64 hover:cursor-pointer"
+            className="p-4 bg-white font-bold text-[1.5rem] w-64 uppercase hover:cursor-pointer"
             onClick={() => {
               if (side != "spectator") {
                 if (messageReceived.started === "false") {

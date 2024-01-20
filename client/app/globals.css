@@ -33,13 +33,13 @@
   background: rgb(0, 0, 255);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 255, 1) 6%,
+    rgb(1, 1, 187) 6%,
     rgba(5, 0, 83, 1) 28%,
     rgba(0, 0, 0, 1) 40%,
     rgba(0, 0, 0, 1) 50%,
     rgba(0, 0, 0, 1) 60%,
     rgba(92, 0, 0, 1) 72%,
-    rgba(255, 0, 0, 1) 94%
+    rgb(184, 0, 0) 94%
   );
 }
 
@@ -91,4 +91,18 @@
   100% {
     background-position: 0% 50%;
   }
+}
+.accent-line-small {
+  width: 420px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 6%,
+    rgba(5, 0, 83, 1) 28%,
+    rgba(29, 29, 29) 40%,
+    rgba(29, 29, 29) 50%,
+    rgb(29, 29, 29) 60%,
+    rgba(92, 0, 0, 1) 72%,
+    rgba(255, 0, 0, 1) 94%
+  );
 }

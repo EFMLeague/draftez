@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const rajdhani = Rajdhani({
+  weight: ["400", "600", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-rajdhani",
+});
 
 export const metadata: Metadata = {
   title: "EasyDraft",
@@ -17,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={rajdhani.className}>{children}</body>
     </html>
   );
 }

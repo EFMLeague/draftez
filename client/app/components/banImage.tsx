@@ -11,9 +11,9 @@ export default function BanImage({
       className={
         "relative h-[90px] w-[90px] mx-4 shadow-inner overflow-hidden banImg border-black border-2 " +
         (champ.id === undefined && champ?.active
-          ? "banImgEmpty border-yellow-800"
+          ? "banImgEmpty border-white"
           : champ?.active
-          ? "border-yellow-800 h-[70%] transition-all duration-300 "
+          ? "border-white h-[70%] transition-all duration-300 "
           : "banImgEmpty")
       }
       style={{
