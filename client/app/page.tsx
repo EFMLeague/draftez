@@ -44,6 +44,12 @@ const Home = () => {
     <div className="bg-white h-screen flex justify-center items-center background-draft">
       {created === false ? (
         <div>
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="font-bold text-violet-50 text-[4.5rem] uppercase text-center">
+              BENVENUTI IN EASY DRAFT!
+            </h1>
+            <div className="accent-line-small"></div>
+          </div>
           <div>
             <p className="text-[3.5rem] text-white font-bold tracking-tighter">
               <span className="text-blue-700">BLUE</span>
@@ -53,7 +59,7 @@ const Home = () => {
               onChange={(event) => {
                 setNameBlue(event.target.value);
               }}
-              className="border-2 border-black w-full text-[2.5rem] text-blue-900 font-bold uppercase"
+              className="border-2 border-black w-full text-[2.5rem] text-blue-900 font-bold "
             />
           </div>
           <div>
@@ -65,7 +71,7 @@ const Home = () => {
               onChange={(event) => {
                 setNameRed(event.target.value);
               }}
-              className="border-2 border-black w-full text-[2.5rem] text-red-900 font-bold uppercase"
+              className="border-2 border-black w-full text-[2.5rem] text-red-900 font-bold "
             />
           </div>
           <button
