@@ -44,7 +44,10 @@ const printRooms = (active) => {
 var activeRooms = [];
 
 app.use(express.static("public"));
-app.get("/ping", (req, res) => res.status(200).json({ message: "pong" }));
+
+app.get("/random", (req, res) =>
+  res.status(200).json({ message: generateRandomLink() })
+);
 
 io.on("connection", (socket) => {
   console.log(`User connected: ${socket.id}`);
