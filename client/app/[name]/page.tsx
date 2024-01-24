@@ -524,7 +524,12 @@ export default function page() {
         </div>
         <div className=" h-full flex justify-center items-center ">
           <button
-            className="p-4 bg-white font-bold text-[1.5rem] w-64 uppercase hover:cursor-pointer"
+            className={
+              "p-4 bg-white font-bold text-[1.5rem] w-64 uppercase hover:cursor-pointer " +
+              (singleChampion === "" && messageReceived.started === "true"
+                ? "pointer-events-none"
+                : "")
+            }
             onClick={() => {
               if (side != "spectator") {
                 if (messageReceived.started === "false") {

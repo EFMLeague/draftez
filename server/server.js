@@ -261,7 +261,7 @@ function startTimer(room) {
 
       io.to(room.roomNumber).emit("message_received", room);
 
-      if (room.draftInfo.draftTurn.timer === -2) {
+      if (room.draftInfo.draftTurn.timer === -3) {
         handleDraftStatsUpdateNotConfirmed(room);
         clearInterval(roomTimers[room.roomNumber]);
         delete roomTimers[room.roomNumber];

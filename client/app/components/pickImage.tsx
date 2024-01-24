@@ -46,7 +46,7 @@ export default function PickImage({
           counter
         </p>
       </div>
-      <p className="absolute right-2 bottom-0 text-gray-200 uppercase font-bold -tracking-tighter">
+      <p className="absolute right-2 bottom-0 text-gray-200 uppercase font-bold -tracking-tighter nameChampDraft">
         {champ.champName}
       </p>
     </a>
