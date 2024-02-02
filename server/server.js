@@ -32,7 +32,7 @@ const generateRandomLink = () => {
     randomLink += characters[randomIndex];
   }
 
-  return randomLink + "$";
+  return randomLink + "%";
 };
 
 const printRooms = (active) => {

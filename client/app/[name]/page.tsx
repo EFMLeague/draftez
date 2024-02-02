@@ -11,7 +11,7 @@ import { Howl } from "howler";
 const socket: Socket = io("https://draftez.onrender.com", {});
 const url = typeof window !== "undefined" ? window.location.href : "";
 const startIndex = url.lastIndexOf("/");
-const endIndex = url.indexOf("$");
+const endIndex = url.indexOf("%");
 
 var room = url.substring(startIndex + 1, endIndex + 1);
 var passwordSide = url.substring(endIndex + 1);
