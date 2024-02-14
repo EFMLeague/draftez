@@ -1296,6 +1296,14 @@
     "rolesPlayed": ["adc"]
   },
   {
+    "id": 901,
+    "name": "Smolder",
+    "alias": "Smolder",
+    "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/901.png",
+    "roles": ["marksman"],
+    "rolesPlayed": ["adc"]
+  },
+  {
     "id": 897,
     "name": "K'Sante",
     "alias": "KSante",

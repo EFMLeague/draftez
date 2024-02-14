@@ -25,7 +25,7 @@ export default function page() {
   const [selectedRole, setSelectedRole] = useState("");
   const [block, setBlock] = useState(false);
 
-  const version = "14.1.1";
+  const version = "14.3.1";
   type Champion = {
     id: number;
     name: string;
