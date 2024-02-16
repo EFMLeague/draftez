@@ -43,110 +43,136 @@ const Home = () => {
   return (
     <div className="bg-white h-screen flex justify-center items-center background-draft">
       {created === false ? (
-        <div>
+        <div className="w-1/3">
           <div className="flex flex-col justify-center items-center">
             <h1 className=" text-violet-50 text-[4.5rem] uppercase text-center">
-              BENVENUTI IN EASY DRAFT!
+              WELCOME TO EASY DRAFT!
             </h1>
-            <div className="accent-line-small"></div>
           </div>
-          <div>
-            <p className="text-[3.5rem] text-white  -tracking-tighter">
-              <span className="text-blue-700">BLUE</span>
-            </p>
-            <input
-              placeholder="Blue"
-              onChange={(event) => {
-                setNameBlue(event.target.value);
-              }}
-              className="border-2 border-black w-full text-[2.5rem] text-blue-900  "
-            />
-          </div>
-          <div>
-            <p className="text-[3.5rem] text-white  -tracking-tighter">
-              <span className="text-red-700">RED</span>
-            </p>
-            <input
-              placeholder="Red"
-              onChange={(event) => {
-                setNameRed(event.target.value);
-              }}
-              className="border-2 border-black w-full text-[2.5rem] text-red-900  "
-            />
+          <div className="bg-black/25 w-full h-[450px] p-[3vw] rounded-[30px]">
+            <div className="flex h-1/2 justify-evenly items-center">
+              <p className="text-[3.5rem] w-1/6 text-white -tracking-tighter pt-2">
+                BLUE
+              </p>
+              <input
+                placeholder="name"
+                onChange={(event) => {
+                  setNameBlue(event.target.value);
+                }}
+                className="border-l-[14px] border-[#1261ff] w-2/3 text-[2.5rem] pl-2 -tracking-tight"
+              />
+            </div>
+            <div className="flex  h-1/2 w-full justify-evenly items-center">
+              <p className="text-[3.5rem] w-1/6 text-white -tracking-tighter pt-2">
+                RED
+              </p>
+              <input
+                placeholder="name"
+                onChange={(event) => {
+                  setNameRed(event.target.value);
+                }}
+                className="border-l-[14px] border-[#ff1515] w-2/3 text-[2.5rem] pl-2 -tracking-tight "
+              />
+            </div>
           </div>
           <button
             onClick={createRoom}
-            className="bg-white w-full h-16 border-2 border-black mt-7 text-[2.5rem] transition-all rounded-md font-medium hover:bg-gray-300"
+            className=" text-white w-full border-4 py-1 border-white mt-7 text-[2.5rem] transition-all rounded-[30px] font-medium hover:bg-white hover:text-black"
           >
-            Crea draft
+            CREA DRAFT
           </button>
         </div>
       ) : (
         <div className="w-1/2">
           <div className="flex flex-col justify-center items-center">
             <h1 className=" text-violet-50 text-[4.5rem] uppercase text-center">
-              THE DRAFT IS READY!
+              THE DRAFT IS READY !
             </h1>
-            <div className="accent-line-small"></div>
           </div>
-          <div>
-            <p className="text-[3.5rem] text-white  -tracking-tighter">
-              BLUE TEAM
-            </p>
-            <input
-              type="text"
-              value={url + messages.room + messages.blue}
-              id="myInput"
-              className="border-2 border-black w-full text-[2rem] text-blue-900 bg-white  px-2 uppercase"
-            />
-            <div className="flex justify-center gap-4 mt-2">
-              <a
-                href={url + messages.room + messages.blue}
-                target="_blank"
-                className="w-1/4"
-              >
-                <div className="border-2 border-black text-[2rem] text-blue-900 bg-white  uppercase text-center hover:bg-neutral-200">
-                  apri
+          <div className="bg-black/25 w-full h-[600px] p-[3vw] rounded-[30px] flex flex-wrap justify-center items-center">
+            <div className="flex justify-center flex-wrap items-center basis-full ">
+              <p className="text-[3.5rem]  w-1/6 text-white pt-2 -tracking-tighter ">
+                BLUE
+              </p>
+              <input
+                type="text"
+                value={url + messages.room + messages.blue}
+                id="myInput"
+                className="border-l-[14px] border-[#1261ff] w-2/3 h-[3.5rem] text-[1.5rem] pl-2 -tracking-tight "
+              />
+              <div className="flex justify-center gap-4 mt-2 pl-3 basis-full  ">
+                <a
+                  href={url + messages.room + messages.blue}
+                  target="_blank"
+                  className="w-1/4"
+                >
+                  <div className="border-2 border-black text-[2rem] text-[#1261ff] bg-white  uppercase text-center hover:bg-[#1261ff] hover:text-white">
+                    apri
+                  </div>
+                </a>
+                <div
+                  className="border-2 border-black w-1/4 text-[2rem] text-[#1261ff] bg-white  uppercase text-center hover:cursor-pointer hover:bg-[#1261ff] hover:text-white"
+                  onClick={() =>
+                    copyIntoClipboard(url + messages.room + messages.blue)
+                  }
+                >
+                  Copia
                 </div>
-              </a>
-              <div
-                className="border-2 border-black w-1/4 text-[2rem] text-blue-900 bg-white  uppercase text-center hover:cursor-pointer hover:bg-neutral-200"
-                onClick={() =>
-                  copyIntoClipboard(url + messages.room + messages.blue)
-                }
-              >
-                Copia
               </div>
             </div>
-          </div>
-          <div className="w-full pt-2">
-            <p className="text-[3.5rem] text-white  -tracking-tighter">
-              RED TEAM
-            </p>
-            <input
-              type="text"
-              value={url + messages.room + messages.red}
-              id="myInput"
-              className="border-2 border-black w-full text-[2rem] text-red-900 bg-white  uppercase px-2"
-            />
-          </div>
-          <div className="flex justify-center gap-4 mt-2">
-            <a
-              href={url + messages.room + messages.red}
-              target="_blank"
-              className="w-1/4"
-            >
-              <div className="border-2 border-black text-[2rem] text-red-900 bg-white  uppercase text-center hover:bg-neutral-200">
-                apri
+            <div className="flex justify-center flex-wrap items-center basis-full ">
+              <p className="text-[3.5rem] w-1/6 text-white  -tracking-tighter pt-2">
+                RED
+              </p>
+              <input
+                type="text"
+                value={url + messages.room + messages.red}
+                id="myInput"
+                className="border-l-[14px] border-[#ff1515] w-2/3 h-[3.5rem] text-[1.5rem] pl-2 -tracking-tight"
+              />
+              <div className="flex justify-center pl-3 gap-4 mt-2 basis-full">
+                <a
+                  href={url + messages.room + messages.red}
+                  target="_blank"
+                  className="w-1/4"
+                >
+                  <div className="border-2 border-black text-[2rem] text-[#ff1515] bg-white  uppercase text-center hover:bg-[#ff1515] hover:text-white">
+                    apri
+                  </div>
+                </a>
+                <div
+                  className="border-2 border-black w-1/4 text-[2rem] text-[#ff1515] bg-white  uppercase text-center hover:cursor-pointer hover:bg-[#ff1515] hover:text-white"
+                  onClick={() =>
+                    copyIntoClipboard(url + messages.room + messages.red)
+                  }
+                >
+                  Copia
+                </div>
               </div>
-            </a>
-            <div
-              className="border-2 border-black w-1/4 text-[2rem] text-red-900 bg-white  uppercase text-center hover:cursor-pointer  hover:bg-neutral-200"
-              onClick={() =>
-                copyIntoClipboard(url + messages.room + messages.red)
-              }
-            >
-              Copia
+            </div>
+            <div className="flex justify-center flex-wrap items-center basis-full">
+              <p className="text-[3.5rem] w-1/6 text-white  -tracking-tighter pt-2">
+                SPEC
+              </p>
+              <input
+                type="text"
+                value={url + messages.room}
+                id="myInput"
+                className="border-l-[14px] border-black w-2/3 h-[3.5rem] text-[1.5rem] pl-2 -tracking-tight"
+              />
+              <div className="flex justify-center pl-3 gap-4 mt-2 basis-full">
+                <a href={url + messages.room} target="_blank" className="w-1/4">
+                  <div className="border-2 border-black text-[2rem] text-black bg-white  uppercase text-center hover:bg-black hover:text-white">
+                    apri
+                  </div>
+                </a>
+                <div
+                  className="border-2 border-black w-1/4 text-[2rem] text-black bg-white  uppercase text-center hover:cursor-pointer hover:bg-black hover:text-white"
+                  onClick={() => copyIntoClipboard(url + messages.room)}
+                >
+                  Copia
+                </div>
+              </div>
             </div>
           </div>
         </div>
