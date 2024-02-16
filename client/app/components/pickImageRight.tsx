@@ -20,7 +20,7 @@ export default function PickImageRight({
       }
       target="_blank"
       className={
-        "h-[25%] w-[20vw] m-1 overflow-hidden relative border border-black  shadow-xl transition-all hover:cursor-pointer " +
+        "h-[22%] w-[17vw] m-1 overflow-hidden relative border border-black  shadow-xl transition-all hover:cursor-pointer " +
         (champ.id === undefined && champ?.active
           ? " pickImgEmpty h-[70%] transition-all duration-300"
           : champ?.active && champ.id

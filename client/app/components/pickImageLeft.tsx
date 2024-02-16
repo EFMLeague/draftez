@@ -20,7 +20,7 @@ export default function pickImageLeft({
       }
       target="_blank"
       className={
-        "h-[22%] w-[20vw]  m-1 overflow-hidden relative shadow-xl border border-black transition-all  hover:cursor-pointer " +
+        "h-[22%] w-[17vw]  m-1 overflow-hidden relative shadow-xl border border-black transition-all  hover:cursor-pointer " +
         (champ.id === undefined && champ?.active
           ? " pickImgEmpty h-[70%] transition-all duration-300  "
           : champ?.active && champ.id
