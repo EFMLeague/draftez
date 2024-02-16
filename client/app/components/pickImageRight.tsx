@@ -58,7 +58,7 @@ export default function PickImageRight({
         <p className=" text-[1.3rem] -tracking-tight uppercase "> counter</p>
       </div>
 
-      <p className="absolute left-2 bottom-0 text-gray-200 uppercase  -tracking-tight nameChampDraft ">
+      <p className="absolute right-2 bottom-0 text-gray-200 uppercase  -tracking-tight nameChampDraft ">
         {champ.champName}
       </p>
     </a>

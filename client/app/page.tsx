@@ -55,6 +55,7 @@ const Home = () => {
                 BLUE
               </p>
               <input
+                maxLength={13}
                 placeholder="name"
                 onChange={(event) => {
                   setNameBlue(event.target.value);
@@ -67,6 +68,7 @@ const Home = () => {
                 RED
               </p>
               <input
+                maxLength={13}
                 placeholder="name"
                 onChange={(event) => {
                   setNameRed(event.target.value);
