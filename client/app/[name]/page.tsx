@@ -11,8 +11,8 @@ import PickImageRight from "../components/pickImageRight";
 import BanImageRight from "../components/banImageRight";
 import BanImageLeft from "@/app/components/banImageLeft";
 
-const socket: Socket = io("http://localhost:3001", {});
-// const socket: Socket = io("https://draftez.onrender.com", {});
+// const socket: Socket = io("http://localhost:3001", {});
+const socket: Socket = io("https://draftez.onrender.com", {});
 
 const url = typeof window !== "undefined" ? window.location.href : "";
 const startIndex = url.lastIndexOf("/");
