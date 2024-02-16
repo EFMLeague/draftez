@@ -476,14 +476,14 @@ export default function page() {
                   : "0"}
               </span>
             </p>
-            <div className="flex justify-center items-center p-1 bg-white">
+            <div className="flex justify-center items-center p-1 m-2 bg-white">
               <img src="./icons8-ricerca-50.png" className="h-[1vw] px-2"></img>
               <input
                 type="text"
                 placeholder="Filtra"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="h-full outline-none text-[1vw] pl-2 pt-1"
+                className="h-full outline-none text-[1vw] pl-2 pt-1 tracking-wider"
               />
             </div>
           </div>
@@ -556,7 +556,7 @@ export default function page() {
         <div className=" h-full basis-[20%] flex justify-center items-center">
           <button
             className={
-              "font-bold text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase text-white hover:cursor-pointer bordi-bottone mb-5 -tracking-tighter " +
+              "text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase text-white hover:cursor-pointer bordi-bottone mb-5 -tracking-tighter hover:bg-white hover:text-[#011627] " +
               (singleChampion === "" && messageReceived.started === "true"
                 ? "pointer-events-none"
                 : "")
