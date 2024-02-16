@@ -401,7 +401,7 @@ export default function page() {
           ></PickImageLeft>
         </div>
         <div className="basis-3/5 mx-[2vw] ">
-          <div className="flex justify-between items-center relative px-10">
+          <div className="flex justify-between items-center relative px-10 pt-[1vw]">
             <div className="flex">
               <Image
                 src={"/roles/top.png"}
@@ -409,10 +409,10 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "top"
                     ? "brightness-100 scale-110"
-                    : "brightness-[80%]")
+                    : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("top")}
               ></Image>
@@ -422,23 +422,23 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "jng"
                     ? "brightness-100 scale-110"
-                    : "brightness-[80%]")
+                    : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("jng")}
               ></Image>
               <Image
                 src={"/roles/mid.png"}
                 alt=""
-                width={100}
-                height={100}
+                width={27}
+                height={27}
                 className={
-                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "mid"
                     ? "brightness-100 scale-110"
-                    : "brightness-[80%]")
+                    : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("mid")}
               ></Image>
@@ -448,10 +448,10 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "adc"
                     ? "brightness-100 scale-110"
-                    : "brightness-[80%]")
+                    : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("adc")}
               ></Image>
@@ -461,10 +461,10 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "sup"
                     ? "brightness-100 scale-110 "
-                    : "brightness-[80%]")
+                    : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("sup")}
               ></Image>
@@ -496,7 +496,7 @@ export default function page() {
                   width={100}
                   height={100}
                   className={
-                    "h-[5.2vw] w-[5.2vw] hover:cursor-pointer m-1  " +
+                    "h-[5.1.5vw] w-[5.2vw] hover:cursor-pointer m-1  " +
                     (checkChampionPicked(champion.alias) ? "grayscale " : "")
                   }
                   key={champion.alias}
