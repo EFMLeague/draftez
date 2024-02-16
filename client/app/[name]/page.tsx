@@ -3,12 +3,17 @@ import React, { useEffect, useState } from "react";
 import { Socket, io } from "socket.io-client";
 import Image from "next/image";
 import champions from "../../public/champions/champion-summary.json" assert { type: "json" };
-import PickImage from "@/app/components/pickImage";
-import BanImage from "@/app/components/banImage";
+import PickImage from "@/app/components/pickImageLeft";
+import BanImage from "@/app/components/banImageLeft";
 import { Howl } from "howler";
+import PickImageLeft from "@/app/components/pickImageLeft";
+import PickImageRight from "../components/pickImageRight";
+import BanImageRight from "../components/banImageRight";
+import BanImageLeft from "@/app/components/banImageLeft";
 
 // const socket: Socket = io("http://localhost:3001", {});
 const socket: Socket = io("https://draftez.onrender.com", {});
+
 const url = typeof window !== "undefined" ? window.location.href : "";
 const startIndex = url.lastIndexOf("/");
 const endIndex = url.indexOf("#");
@@ -72,8 +77,8 @@ export default function page() {
       red: "",
     },
     draftNames: {
-      teamBlue: "",
-      teamRed: "",
+      teamBlue: "Blue",
+      teamRed: "Red",
     },
     draftStats: {
       bluePick: [] as string[],
@@ -332,46 +337,70 @@ export default function page() {
   return (
     <div
       className={
-        "h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap transition-all " +
-        (turnSide() === "stall"
-          ? " background-draft"
-          : turnSide() === "red"
-          ? "background-draft-to-red"
-          : "background-draft-to-blue")
+        "h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap transition-all background-draft "
+        // + (turnSide() === "stall"
+        //   ? " background-draft"
+        //   : turnSide() === "red"
+        //   ? " background-draft-to-red "
+        //   : " background-draft-to-blue ")
       }
     >
-      <div className="my-4 w-full flex justify-between ">
-        <div className="basis-1/5 bg-slate-200">
-          <p className="text-[2.5rem] px-4 font-bold text-blue-950">
+      <div className="w-full pt-4 flex h-[10%] justify-between ">
+        <div className="basis-1/4 h-full bg-[#2ec4b6] relative flex justify-center items-center ">
+          <p className="text-[2.3vw] pt-[0.5vw] px-4 text-center  text-black uppercase">
             {messageReceived.draftNames.teamBlue}
           </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 69.68 60.36"
+            className="h-[80%] absolute right-0 top-2 fill-black"
+          >
+            <g id="Livello_2" data-name="Livello 2">
+              <g id="Livello_1-2" data-name="Livello 1">
+                <path d="M31,13.88,17.15,0a17.89,17.89,0,0,0,0,25.29L31,39.17l5.23,5.31,0-17.28A17.82,17.82,0,0,0,31,13.88Z" />
+                <path d="M5.23,22.24a17.89,17.89,0,0,0-4,19.25A48.56,48.56,0,0,0,5.69,46.6,47.3,47.3,0,0,0,36.22,60.36,17.79,17.79,0,0,0,31,48Z" />
+              </g>
+            </g>
+          </svg>
         </div>
-        <div className="basis-1/5 bg-slate-200">
-          <p className="text-[2.5rem] text-end px-4 font-bold text-red-950">
+        <div className="basis-1/4 h-full pt-[0.5vw] bg-[#df2935] relative flex justify-center  items-center">
+          <p className="text-[2.3vw] text-center px-4 text-white uppercase">
             {messageReceived.draftNames.teamRed}
           </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 69.68 60.36"
+            className="h-[80%] absolute left-0 top-2 transform -scale-x-100 fill-white"
+          >
+            <g id="Livello_2" data-name="Livello 2">
+              <g id="Livello_1-2" data-name="Livello 1">
+                <path d="M31,13.88,17.15,0a17.89,17.89,0,0,0,0,25.29L31,39.17l5.23,5.31,0-17.28A17.82,17.82,0,0,0,31,13.88Z" />
+                <path d="M5.23,22.24a17.89,17.89,0,0,0-4,19.25A48.56,48.56,0,0,0,5.69,46.6,47.3,47.3,0,0,0,36.22,60.36,17.79,17.79,0,0,0,31,48Z" />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
-      <div className="flex w-full h-[75%] ">
-        <div className="basis-1/5 h-full flex shrink flex-col">
-          <PickImage
+      <div className="flex w-full h-[80%] ">
+        <div className="basis-1/5 h-full flex shrink flex-col bg-[#00688a] p-[0.3vw] rounded-br-[30px] ">
+          <PickImageLeft
             champ={imagePick(messageReceived.draftStats.bluePick[0], 6)}
-          ></PickImage>
-          <PickImage
+          ></PickImageLeft>
+          <PickImageLeft
             champ={imagePick(messageReceived.draftStats.bluePick[1], 9)}
-          ></PickImage>
-          <PickImage
+          ></PickImageLeft>
+          <PickImageLeft
             champ={imagePick(messageReceived.draftStats.bluePick[2], 10)}
-          ></PickImage>
-          <div className="pt-5"></div>
-          <PickImage
+          ></PickImageLeft>
+          <div className="pt-[1vw]"></div>
+          <PickImageLeft
             champ={imagePick(messageReceived.draftStats.bluePick[3], 17)}
-          ></PickImage>
-          <PickImage
+          ></PickImageLeft>
+          <PickImageLeft
             champ={imagePick(messageReceived.draftStats.bluePick[4], 18)}
-          ></PickImage>
+          ></PickImageLeft>
         </div>
-        <div className="basis-3/5 ">
+        <div className="basis-3/5 mx-[2vw] ">
           <div className="flex justify-between items-center relative px-10">
             <div className="flex">
               <Image
@@ -380,7 +409,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[48px] w-[48px] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "top"
                     ? "brightness-100 scale-110"
                     : "brightness-[80%]")
@@ -393,7 +422,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[48px] w-[48px] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "jng"
                     ? "brightness-100 scale-110"
                     : "brightness-[80%]")
@@ -406,7 +435,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[48px] w-[48px] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "mid"
                     ? "brightness-100 scale-110"
                     : "brightness-[80%]")
@@ -419,7 +448,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[48px] w-[48px] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "adc"
                     ? "brightness-100 scale-110"
                     : "brightness-[80%]")
@@ -432,7 +461,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[48px] w-[48px] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-[2vw] w-[2vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "sup"
                     ? "brightness-100 scale-110 "
                     : "brightness-[80%]")
@@ -441,7 +470,7 @@ export default function page() {
               ></Image>
             </div>
             <p className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span className="text-[4rem] font-bold">
+              <span className="text-[3vw] ">
                 {Number(messageReceived.draftTurn.timer) > 0
                   ? messageReceived.draftTurn.timer
                   : "0"}
@@ -453,11 +482,11 @@ export default function page() {
                 placeholder="Filtra per nome"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="h-9 border border-black font-bold text-[1.5rem]"
+                className="h-[2vw] border border-black font-bold text-[1.5vw]"
               />
             </div>
           </div>
-          <div className="w-full h-[70%] overflow-y-auto border-b-4 rounded-md border-black bg-black/40">
+          <div className="w-full h-[85%] overflow-y-auto border-b-4 rounded-[30px] border-black bg-black/40">
             <div className="flex flex-wrap justify-center py-2 min-w-[200px] ">
               {championsFiltered.map((champion: any) => (
                 <img
@@ -466,7 +495,7 @@ export default function page() {
                   width={100}
                   height={100}
                   className={
-                    "h-[110px] w-[110px] hover:cursor-pointer m-1 " +
+                    "h-[5.2vw] w-[5.2vw] hover:cursor-pointer m-1 " +
                     (checkChampionPicked(champion.alias) ? "grayscale " : "")
                   }
                   key={champion.alias}
@@ -485,47 +514,48 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="basis-1/5 flex shrink flex-col items-end">
-          <PickImage
+        <div className="basis-1/5 flex shrink flex-col items-end bg-[#ec465a] p-[0.3vw] rounded-bl-[30px] ">
+          <PickImageRight
             champ={imagePick(messageReceived.draftStats.redPick[0], 7)}
-          ></PickImage>
-          <PickImage
+          ></PickImageRight>
+          <PickImageRight
             champ={imagePick(messageReceived.draftStats.redPick[1], 8)}
-          ></PickImage>
-          <PickImage
+          ></PickImageRight>
+          <PickImageRight
             champ={imagePick(messageReceived.draftStats.redPick[2], 11)}
-          ></PickImage>
-          <div className="pt-5"></div>
-          <PickImage
+          ></PickImageRight>
+          <div className="pt-[1vw]"></div>
+          <PickImageRight
             champ={imagePick(messageReceived.draftStats.redPick[3], 16)}
-          ></PickImage>
-          <PickImage
+          ></PickImageRight>
+          <PickImageRight
             champ={imagePick(messageReceived.draftStats.redPick[4], 19)}
-          ></PickImage>
+          ></PickImageRight>
         </div>
       </div>
-      <div className="flex justify-between items-center pt-3">
-        <div className="flex h-full">
-          <BanImage
+      <div className="flex justify-between w-full items-center my-[0.3vw] h-[10%] ">
+        <div className="flex h-full basis-[40%] justify-end ">
+          <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[0], 0)}
-          ></BanImage>
-          <BanImage
+          ></BanImageLeft>
+          <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[1], 2)}
-          ></BanImage>
-          <BanImage
+          ></BanImageLeft>
+          <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[2], 4)}
-          ></BanImage>
-          <BanImage
+          ></BanImageLeft>
+          <div className="px-3"></div>
+          <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[3], 13)}
-          ></BanImage>
-          <BanImage
+          ></BanImageLeft>
+          <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[4], 15)}
-          ></BanImage>
+          ></BanImageLeft>
         </div>
-        <div className=" h-full flex justify-center items-center ">
+        <div className=" h-full basis-[20%] flex justify-center items-center">
           <button
             className={
-              "p-4 bg-white font-bold text-[1.5rem] w-64 uppercase hover:cursor-pointer " +
+              "font-bold text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase text-white hover:cursor-pointer bordi-bottone mb-5 -tracking-tight " +
               (singleChampion === "" && messageReceived.started === "true"
                 ? "pointer-events-none"
                 : "")
@@ -546,22 +576,23 @@ export default function page() {
             {checkSideButton()}
           </button>
         </div>
-        <div className="flex h-full justify-center items-start ">
-          <BanImage
+        <div className="flex h-full basis-[40%] justify-start items-start ">
+          <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[4], 14)}
-          ></BanImage>
-          <BanImage
+          ></BanImageRight>
+          <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[3], 12)}
-          ></BanImage>
-          <BanImage
+          ></BanImageRight>
+          <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[2], 5)}
-          ></BanImage>
-          <BanImage
+          ></BanImageRight>
+          <div className="px-3"></div>
+          <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[1], 3)}
-          ></BanImage>
-          <BanImage
+          ></BanImageRight>
+          <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[0], 1)}
-          ></BanImage>
+          ></BanImageRight>
         </div>
       </div>
     </div>

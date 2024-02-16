@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
 import { Rajdhani } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+export const revalidate = 0;
 
 const rajdhani = Rajdhani({
   weight: ["400", "600", "500", "700"],
   subsets: ["latin"],
   variable: "--font-rajdhani",
 });
-
+const schabo = localFont({
+  src: [
+    {
+      path: "./utils/font/SCHABO-Condensed.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 export const metadata: Metadata = {
   title: "EasyDraft",
   description:
@@ -20,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={rajdhani.className}>{children}</body>
+    <html lang="it">
+      <body className={`${schabo.className}`}>{children}</body>
     </html>
   );
 }

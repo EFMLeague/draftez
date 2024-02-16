@@ -1,7 +1,7 @@
 import React from "react";
 import "../globals.css";
 
-export default function BanImage({
+export default function BanImageLeft({
   champ,
 }: {
   champ: { id: number | undefined; active: boolean };
@@ -9,17 +9,17 @@ export default function BanImage({
   return (
     <div
       className={
-        "relative h-[90px] w-[90px] mx-4 shadow-inner overflow-hidden banImg border-black border-2 " +
+        "relative h-[4.3vw] w-[4.8vw] mx-[0.5vw] shadow-inner overflow-hidden banImg  rounded-tr-[30px]  " +
         (champ.id === undefined && champ?.active
-          ? "banImgEmpty border-white"
+          ? "banImgEmptyLeft border-white border "
           : champ?.active
-          ? "border-white h-[70%] transition-all duration-300 "
-          : "banImgEmpty")
+          ? "border-white border h-[90%] transition-all duration-300 "
+          : "banImgEmptyLeft")
       }
       style={{
         backgroundImage:
           champ.id === undefined
-            ? `url("https://draftlol.dawe.gg/rectangle.png")`
+            ? ``
             : `url("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/` +
               champ.id +
               `/` +

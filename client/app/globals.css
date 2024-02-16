@@ -15,6 +15,7 @@
   background-position: 50% center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("../public/bg-empty.png");
 }
 .banImg {
   background-size: 360%;
@@ -22,13 +23,32 @@
   background-repeat: no-repeat;
 }
 
-.banImgEmpty {
+.banImgEmptyRight {
   background-size: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0) !important;
+  background-color: #ec465a;
 }
 
+.banImgEmptyLeft {
+  background-size: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0) !important;
+  background-color: #00688a;
+}
+
+.img-empty {
+  background-image: url("../public/bg-empty.png");
+}
+
+.background-draft {
+  background-image: url("../public/backgrounds/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* 
 .background-draft {
   background: rgb(0, 0, 255);
   background: linear-gradient(
@@ -91,7 +111,7 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 .accent-line-small {
   width: 420px;
   height: 4px;
@@ -107,6 +127,19 @@
   );
 }
 
+.bordi-bottone {
+  border-radius: 15% 15% 15% 15% / 47% 48% 52% 52%;
+  @apply border-white border-2;
+}
+
 .nameChampDraft {
   text-shadow: 0 0 8px #000, 0 0 2px #000, 0 0 2px #000;
+}
+
+.bordi-pick-left {
+  border-radius: 0% 20% 12% 0% / 30% 40% 30% 30%;
+}
+
+.bordi-pick-right {
+  border-radius: 20% 0% 0% 12% / 40% 41% 30% 15%;
 }
