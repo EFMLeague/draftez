@@ -11,8 +11,8 @@ import PickImageRight from "../components/pickImageRight";
 import BanImageRight from "../components/banImageRight";
 import BanImageLeft from "@/app/components/banImageLeft";
 
-// const socket: Socket = io("http://localhost:3001", {});
-const socket: Socket = io("https://draftez.onrender.com", {});
+const socket: Socket = io("http://localhost:3001", {});
+// const socket: Socket = io("https://draftez.onrender.com", {});
 
 const url = typeof window !== "undefined" ? window.location.href : "";
 const startIndex = url.lastIndexOf("/");
@@ -248,12 +248,12 @@ export default function page() {
       if ([0, 2, 4, 6, 9, 10, 13, 15, 17, 18].includes(messageReceived.phase)) {
         if (side === "blue") return <p>pick</p>;
         if (side === "red") return <p>waiting</p>;
-      }
-      if ([1, 3, 5, 7, 8, 11, 12, 14, 16, 19].includes(messageReceived.phase)) {
+      } else if (
+        [1, 3, 5, 7, 8, 11, 12, 14, 16, 19].includes(messageReceived.phase)
+      ) {
         if (side === "blue") return <p>waiting</p>;
         if (side === "red") return <p>pick</p>;
-      }
-      if ([20].includes(messageReceived.phase)) {
+      } else if ([20].includes(messageReceived.phase)) {
         return <p>Draft finita</p>;
       }
     }
@@ -476,13 +476,14 @@ export default function page() {
                   : "0"}
               </span>
             </p>
-            <div>
+            <div className="flex justify-center items-center p-1 bg-white">
+              <img src="./icons8-ricerca-50.png" className="h-[1vw] px-2"></img>
               <input
                 type="text"
-                placeholder="Filtra per nome"
+                placeholder="Filtra"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="h-[2vw] border border-black font-bold text-[1.5vw]"
+                className="h-full outline-none text-[1vw] pl-2 pt-1"
               />
             </div>
           </div>
@@ -495,7 +496,7 @@ export default function page() {
                   width={100}
                   height={100}
                   className={
-                    "h-[5.2vw] w-[5.2vw] hover:cursor-pointer m-1 " +
+                    "h-[5.2vw] w-[5.2vw] hover:cursor-pointer m-1  " +
                     (checkChampionPicked(champion.alias) ? "grayscale " : "")
                   }
                   key={champion.alias}
@@ -544,7 +545,7 @@ export default function page() {
           <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[2], 4)}
           ></BanImageLeft>
-          <div className="px-3"></div>
+          <div className="px-[1vw]"></div>
           <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[3], 13)}
           ></BanImageLeft>
@@ -555,7 +556,7 @@ export default function page() {
         <div className=" h-full basis-[20%] flex justify-center items-center">
           <button
             className={
-              "font-bold text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase text-white hover:cursor-pointer bordi-bottone mb-5 -tracking-tight " +
+              "font-bold text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase text-white hover:cursor-pointer bordi-bottone mb-5 -tracking-tighter " +
               (singleChampion === "" && messageReceived.started === "true"
                 ? "pointer-events-none"
                 : "")
@@ -583,10 +584,10 @@ export default function page() {
           <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[3], 12)}
           ></BanImageRight>
+          <div className="px-[1vw]"></div>
           <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[2], 5)}
           ></BanImageRight>
-          <div className="px-3"></div>
           <BanImageRight
             champ={imagePick(messageReceived.draftStats.banRed[1], 3)}
           ></BanImageRight>

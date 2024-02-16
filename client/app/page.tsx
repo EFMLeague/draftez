@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Socket, io } from "socket.io-client";
 
-const socket: Socket = io("https://draftez.onrender.com", {});
-// const socket: Socket = io("http://localhost:3001", {});
+// const socket: Socket = io("https://draftez.onrender.com", {});
+const socket: Socket = io("http://localhost:3001", {});
 
 const url = typeof window !== "undefined" ? window.location.href : "";
 
@@ -45,13 +45,13 @@ const Home = () => {
       {created === false ? (
         <div>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-violet-50 text-[4.5rem] uppercase text-center">
+            <h1 className=" text-violet-50 text-[4.5rem] uppercase text-center">
               BENVENUTI IN EASY DRAFT!
             </h1>
             <div className="accent-line-small"></div>
           </div>
           <div>
-            <p className="text-[3.5rem] text-white font-bold tracking-tighter">
+            <p className="text-[3.5rem] text-white  -tracking-tighter">
               <span className="text-blue-700">BLUE</span>
             </p>
             <input
@@ -59,11 +59,11 @@ const Home = () => {
               onChange={(event) => {
                 setNameBlue(event.target.value);
               }}
-              className="border-2 border-black w-full text-[2.5rem] text-blue-900 font-bold "
+              className="border-2 border-black w-full text-[2.5rem] text-blue-900  "
             />
           </div>
           <div>
-            <p className="text-[3.5rem] text-white font-bold tracking-tighter">
+            <p className="text-[3.5rem] text-white  -tracking-tighter">
               <span className="text-red-700">RED</span>
             </p>
             <input
@@ -71,7 +71,7 @@ const Home = () => {
               onChange={(event) => {
                 setNameRed(event.target.value);
               }}
-              className="border-2 border-black w-full text-[2.5rem] text-red-900 font-bold "
+              className="border-2 border-black w-full text-[2.5rem] text-red-900  "
             />
           </div>
           <button
@@ -84,20 +84,20 @@ const Home = () => {
       ) : (
         <div className="w-1/2">
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-violet-50 text-[4.5rem] uppercase text-center">
+            <h1 className=" text-violet-50 text-[4.5rem] uppercase text-center">
               THE DRAFT IS READY!
             </h1>
             <div className="accent-line-small"></div>
           </div>
           <div>
-            <p className="text-[3.5rem] text-white font-bold tracking-tighter">
+            <p className="text-[3.5rem] text-white  -tracking-tighter">
               BLUE TEAM
             </p>
             <input
               type="text"
               value={url + messages.room + messages.blue}
               id="myInput"
-              className="border-2 border-black w-full text-[2rem] text-blue-900 bg-white font-bold px-2 uppercase"
+              className="border-2 border-black w-full text-[2rem] text-blue-900 bg-white  px-2 uppercase"
             />
             <div className="flex justify-center gap-4 mt-2">
               <a
@@ -105,12 +105,12 @@ const Home = () => {
                 target="_blank"
                 className="w-1/4"
               >
-                <div className="border-2 border-black text-[2rem] text-blue-900 bg-white font-bold uppercase text-center hover:bg-neutral-200">
+                <div className="border-2 border-black text-[2rem] text-blue-900 bg-white  uppercase text-center hover:bg-neutral-200">
                   apri
                 </div>
               </a>
               <div
-                className="border-2 border-black w-1/4 text-[2rem] text-blue-900 bg-white font-bold uppercase text-center hover:cursor-pointer hover:bg-neutral-200"
+                className="border-2 border-black w-1/4 text-[2rem] text-blue-900 bg-white  uppercase text-center hover:cursor-pointer hover:bg-neutral-200"
                 onClick={() =>
                   copyIntoClipboard(url + messages.room + messages.blue)
                 }
@@ -120,14 +120,14 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full pt-2">
-            <p className="text-[3.5rem] text-white font-bold tracking-tighter">
+            <p className="text-[3.5rem] text-white  -tracking-tighter">
               RED TEAM
             </p>
             <input
               type="text"
               value={url + messages.room + messages.red}
               id="myInput"
-              className="border-2 border-black w-full text-[2rem] text-red-900 bg-white font-bold uppercase px-2"
+              className="border-2 border-black w-full text-[2rem] text-red-900 bg-white  uppercase px-2"
             />
           </div>
           <div className="flex justify-center gap-4 mt-2">
@@ -136,12 +136,12 @@ const Home = () => {
               target="_blank"
               className="w-1/4"
             >
-              <div className="border-2 border-black text-[2rem] text-red-900 bg-white font-bold uppercase text-center hover:bg-neutral-200">
+              <div className="border-2 border-black text-[2rem] text-red-900 bg-white  uppercase text-center hover:bg-neutral-200">
                 apri
               </div>
             </a>
             <div
-              className="border-2 border-black w-1/4 text-[2rem] text-red-900 bg-white font-bold uppercase text-center hover:cursor-pointer  hover:bg-neutral-200"
+              className="border-2 border-black w-1/4 text-[2rem] text-red-900 bg-white  uppercase text-center hover:cursor-pointer  hover:bg-neutral-200"
               onClick={() =>
                 copyIntoClipboard(url + messages.room + messages.red)
               }
