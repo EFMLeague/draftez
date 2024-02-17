@@ -114,6 +114,9 @@ export default function page() {
       sound.volume(0.5);
     }
   }
+
+  const checkOneClick = () => {};
+
   useEffect(() => {
     setBlock(false);
     const idChampion = idChamp();
@@ -258,10 +261,13 @@ export default function page() {
     }
   };
   const inviaChamp = () => {
-    let updatedMessageReceived = { ...messageReceived };
-    updatedMessageReceived.confirm = "true";
-    setMessageReceived(updatedMessageReceived);
-    socket.emit("send_pick", updatedMessageReceived);
+    if (checkPhaseImage() === true) {
+      setBlock(false);
+      let updatedMessageReceived = { ...messageReceived };
+      updatedMessageReceived.confirm = "true";
+      setMessageReceived(updatedMessageReceived);
+      socket.emit("send_pick", updatedMessageReceived);
+    }
   };
 
   const checkPhaseImage = () => {
@@ -558,7 +564,7 @@ export default function page() {
                 if (messageReceived.started === "false") {
                   toggleReady();
                 } else {
-                  if (checkPhaseImage() === true) {
+                  if (checkPhaseImage() === true && block) {
                     setBlock(true);
                     inviaChamp();
                   }
