@@ -261,8 +261,8 @@ export default function page() {
     }
   };
   const inviaChamp = () => {
-    if (checkPhaseImage() === true) {
-      setBlock(false);
+    if (checkPhaseImage() === true && !block) {
+      setBlock(true);
       let updatedMessageReceived = { ...messageReceived };
       updatedMessageReceived.confirm = "true";
       setMessageReceived(updatedMessageReceived);
@@ -564,7 +564,7 @@ export default function page() {
                 if (messageReceived.started === "false") {
                   toggleReady();
                 } else {
-                  if (checkPhaseImage() === true && block) {
+                  if (checkPhaseImage() === true && !block) {
                     setBlock(true);
                     inviaChamp();
                   }
