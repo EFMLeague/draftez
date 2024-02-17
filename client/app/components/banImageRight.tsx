@@ -9,12 +9,12 @@ export default function BanImageRight({
   return (
     <div
       className={
-        "relative h-[4.3vw] w-[4.8vw] mx-[0.5vw] shadow-inner overflow-hidden banImg  rounded-tl-[30px] " +
+        "relative h-[4.0vw] w-[4.5vw] mx-[0.5vw] shadow-inner overflow-hidden banImg   rounded-tl-[30px] bg-[#ec465a] " +
         (champ.id === undefined && champ?.active
-          ? "banImgEmptyRight border-white border "
+          ? " border-white border "
           : champ?.active
-          ? "border-white border h-[90%] transition-all duration-300 "
-          : "banImgEmptyRight ")
+          ? "border-white ban-image border h-[86%] transition-all duration-300 "
+          : " ban-image ")
       }
       style={{
         backgroundImage:

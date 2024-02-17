@@ -496,8 +496,10 @@ export default function page() {
                   width={100}
                   height={100}
                   className={
-                    "h-[5.1.5vw] w-[5.2vw] hover:cursor-pointer m-1  " +
-                    (checkChampionPicked(champion.alias) ? "grayscale " : "")
+                    "h-[5.1.5vw] w-[5.2vw] hover:cursor-pointer m-1 " +
+                    (checkChampionPicked(champion.alias)
+                      ? "grayscale "
+                      : " hover:grayscale hover:border ")
                   }
                   key={champion.alias}
                   onClick={() => {
