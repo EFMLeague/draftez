@@ -190,7 +190,6 @@ export default function page() {
       if (data.blue === passwordSide) setSide("blue");
       if (data.red === passwordSide) setSide("red");
     });
-    console.log(side);
   }, [socket]);
 
   useEffect(() => {
@@ -277,18 +276,6 @@ export default function page() {
         console.log("red");
         return true;
       } else return false;
-    }
-  };
-  const turnSide = () => {
-    if (
-      messageReceived.phase === 20 ||
-      (messageReceived.phase === 0 && messageReceived.started === "false")
-    ) {
-      return "stall";
-    } else {
-      if ([0, 2, 4, 6, 9, 10, 13, 15, 17, 18].includes(messageReceived.phase)) {
-        return "blue";
-      } else return "red";
     }
   };
 
@@ -496,10 +483,13 @@ export default function page() {
                   width={100}
                   height={100}
                   className={
-                    "h-[5.1.5vw] w-[5.2vw] hover:cursor-pointer m-1 " +
+                    "h-[5.2vw] w-[5.2vw] hover:cursor-pointer m-1  " +
                     (checkChampionPicked(champion.alias)
                       ? "grayscale "
-                      : " hover:grayscale hover:border ")
+                      : " hover:grayscale hover:border ") +
+                    (singleChampion === champion.alias
+                      ? " grayscale border "
+                      : " ")
                   }
                   key={champion.alias}
                   onClick={() => {

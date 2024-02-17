@@ -11,10 +11,10 @@ export default function BanImageLeft({
       className={
         "relative h-[4.0vw] w-[4.5vw] mx-[0.5vw] shadow-inner overflow-hidden banImg rounded-tr-[30px] bg-[#00688a] " +
         (champ.id === undefined && champ?.active
-          ? " border-white border "
+          ? " border-white border banImg "
           : champ?.active
-          ? "border-white ban-image border h-[90%] transition-all duration-300 "
-          : "ban-image")
+          ? "border-white banImg border transition-all duration-300 "
+          : "banImg")
       }
       style={{
         backgroundImage:
