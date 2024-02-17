@@ -345,7 +345,7 @@ export default function page() {
         //   : " background-draft-to-blue ")
       }
     >
-      <div className="w-full pt-4 flex h-[10%] justify-between ">
+      <div className="w-full pt-4 flex h-[8%] justify-between ">
         <div className="basis-1/4 h-full bg-[#2ec4b6] relative flex justify-center items-center ">
           <p className="text-[2.3vw] pt-[0.5vw] px-4 text-center  text-black uppercase">
             {messageReceived.draftNames.teamBlue}
@@ -536,7 +536,7 @@ export default function page() {
           ></PickImageRight>
         </div>
       </div>
-      <div className="flex justify-between w-full items-center my-[0.3vw] h-[10%] ">
+      <div className="flex justify-between w-full items-center mb-[0.3vw] ">
         <div className="flex h-full basis-[40%] justify-end ">
           <BanImageLeft
             champ={imagePick(messageReceived.draftStats.banBlue[0], 0)}
