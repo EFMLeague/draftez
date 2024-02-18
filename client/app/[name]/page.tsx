@@ -331,16 +331,11 @@ export default function page() {
     <div
       className={
         "h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap transition-all background-draft "
-        // + (turnSide() === "stall"
-        //   ? " background-draft"
-        //   : turnSide() === "red"
-        //   ? " background-draft-to-red "
-        //   : " background-draft-to-blue ")
       }
     >
       <div className="w-full pt-4 flex h-[8%] justify-between ">
-        <div className="basis-1/4 h-full bg-[#2ec4b6] relative flex justify-center items-center ">
-          <p className="text-[2.3vw] pt-[0.5vw] px-4 text-center  text-black uppercase">
+        <div className="basis-1/3 md:basis-1/4 h-full bg-[#2ec4b6] relative flex justify-center items-center ">
+          <p className="text-[1rem] md:text-[2.3vw] pt-[0.5vw] px-4 text-center  text-black uppercase">
             {messageReceived.draftNames.teamBlue}
           </p>
           <svg
@@ -356,8 +351,8 @@ export default function page() {
             </g>
           </svg>
         </div>
-        <div className="basis-1/4 h-full pt-[0.5vw] bg-[#df2935] relative flex justify-center  items-center">
-          <p className="text-[2.3vw] text-center px-4 text-white uppercase">
+        <div className="basis-1/3 md:basis-1/4 h-full pt-[0.5vw] bg-[#df2935] relative flex justify-center  items-center">
+          <p className="text-[1rem] md:text-[2.3vw] text-center px-4 text-white uppercase">
             {messageReceived.draftNames.teamRed}
           </p>
           <svg
@@ -394,7 +389,7 @@ export default function page() {
           ></PickImageLeft>
         </div>
         <div className="basis-3/5 mx-[2vw] ">
-          <div className="flex justify-between items-center relative px-10 pt-[1vw]">
+          <div className="flex justify-between items-center flex-wrap relative px-10 pt-[1vw]">
             <div className="flex">
               <Image
                 src={"/roles/top.png"}
@@ -402,7 +397,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "top"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
@@ -415,7 +410,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "jng"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
@@ -428,7 +423,7 @@ export default function page() {
                 width={27}
                 height={27}
                 className={
-                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "mid"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
@@ -441,7 +436,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "adc"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
@@ -454,7 +449,7 @@ export default function page() {
                 width={100}
                 height={100}
                 className={
-                  "h-[1.5vw] w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "sup"
                     ? "brightness-100 scale-110 "
                     : "brightness-[70%]")
@@ -489,7 +484,7 @@ export default function page() {
                   width={100}
                   height={100}
                   className={
-                    "h-[5.2vw] w-[5.2vw] hover:cursor-pointer m-1  " +
+                    "h-[3rem] w-[3rem] md:h-[5.2vw] md:w-[5.2vw] hover:cursor-pointer m-1  " +
                     (checkChampionPicked(champion.alias)
                       ? "grayscale "
                       : " hover:grayscale hover:border ") +

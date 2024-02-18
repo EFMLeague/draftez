@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div className="bg-white h-screen flex justify-center items-center background-draft">
       {created === false ? (
-        <div className="w-1/3">
+        <div className="w-full md:w-1/3">
           <div className="flex flex-col justify-center items-center">
             <h1 className=" text-violet-50 text-[4.5rem] uppercase text-center">
               WELCOME TO EASY DRAFT!
@@ -85,7 +85,7 @@ const Home = () => {
           </button>
         </div>
       ) : (
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <div className="flex flex-col justify-center items-center">
             <h1 className=" text-violet-50 text-[4.5rem] uppercase text-center">
               THE DRAFT IS READY !

@@ -5,7 +5,21 @@
     "alias": "Aatrox",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/266.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "007",
+      "008",
+      "009",
+      "011",
+      "020",
+      "021",
+      "030",
+      "031"
+    ]
   },
   {
     "id": 103,
@@ -13,7 +27,27 @@
     "alias": "Ahri",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/103.png",
     "roles": ["mage", "assassin"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "014",
+      "015",
+      "016",
+      "017",
+      "027",
+      "028",
+      "042",
+      "065",
+      "066",
+      "076"
+    ]
   },
   {
     "id": 84,
@@ -21,7 +55,29 @@
     "alias": "Akali",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/84.png",
     "roles": ["assassin"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "013",
+      "014",
+      "015",
+      "032",
+      "050",
+      "060",
+      "061",
+      "068",
+      "070",
+      "071"
+    ]
   },
   {
     "id": 166,
@@ -29,7 +85,8 @@
     "alias": "Akshan",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/166.png",
     "roles": ["marksman", "assassin"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": ["000", "001", "010", "020"]
   },
   {
     "id": 12,
@@ -37,7 +94,24 @@
     "alias": "Alistar",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/12.png",
     "roles": ["tank", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "019",
+      "020",
+      "022",
+      "029"
+    ]
   },
   {
     "id": 32,
@@ -45,7 +119,23 @@
     "alias": "Amumu",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/32.png",
     "roles": ["tank", "mage"],
-    "rolesPlayed": ["jng", "sup"]
+    "rolesPlayed": ["jng", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "017",
+      "023",
+      "024",
+      "034",
+      "044"
+    ]
   },
   {
     "id": 34,
@@ -53,7 +143,22 @@
     "alias": "Anivia",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/34.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "017",
+      "027",
+      "037",
+      "046"
+    ]
   },
   {
     "id": 1,
@@ -61,7 +166,26 @@
     "alias": "Annie",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/1.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid", "sup"]
+    "rolesPlayed": ["mid", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "012",
+      "013",
+      "022",
+      "031",
+      "040"
+    ]
   },
   {
     "id": 523,
@@ -69,7 +193,8 @@
     "alias": "Aphelios",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/523.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": ["000", "001", "009", "018", "020", "030"]
   },
   {
     "id": 22,
@@ -77,7 +202,27 @@
     "alias": "Ashe",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/22.png",
     "roles": ["marksman", "support"],
-    "rolesPlayed": ["adc", "sup"]
+    "rolesPlayed": ["adc", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "011",
+      "017",
+      "023",
+      "032",
+      "043",
+      "052",
+      "063",
+      "065"
+    ]
   },
   {
     "id": 136,
@@ -85,7 +230,8 @@
     "alias": "AurelionSol",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/136.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001", "002", "011", "021"]
   },
   {
     "id": 268,
@@ -93,7 +239,8 @@
     "alias": "Azir",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/268.png",
     "roles": ["mage", "marksman"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "014"]
   },
   {
     "id": 432,
@@ -101,7 +248,8 @@
     "alias": "Bard",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/432.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001", "005", "006", "008", "017", "026"]
   },
   {
     "id": 200,
@@ -109,7 +257,8 @@
     "alias": "Belveth",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/200.png",
     "roles": ["fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "010"]
   },
   {
     "id": 53,
@@ -117,7 +266,25 @@
     "alias": "Blitzcrank",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/53.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "011",
+      "020",
+      "021",
+      "022",
+      "029",
+      "036",
+      "047",
+      "056"
+    ]
   },
   {
     "id": 63,
@@ -125,7 +292,21 @@
     "alias": "Brand",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/63.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid", "sup"]
+    "rolesPlayed": ["mid", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "021",
+      "022",
+      "033"
+    ]
   },
   {
     "id": 201,
@@ -133,7 +314,8 @@
     "alias": "Braum",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/201.png",
     "roles": ["support", "tank"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001", "002", "003", "010", "011", "024", "033"]
   },
   {
     "id": 233,
@@ -141,7 +323,8 @@
     "alias": "Briar",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/233.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001"]
   },
   {
     "id": 51,
@@ -149,7 +332,27 @@
     "alias": "Caitlyn",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/51.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "013",
+      "019",
+      "020",
+      "022",
+      "028",
+      "029",
+      "030",
+      "039",
+      "048"
+    ]
   },
   {
     "id": 164,
@@ -157,7 +360,8 @@
     "alias": "Camille",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/164.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": ["000", "001", "002", "010", "011", "021", "031", "032"]
   },
   {
     "id": 69,
@@ -165,7 +369,18 @@
     "alias": "Cassiopeia",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/69.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "008",
+      "009",
+      "018",
+      "028"
+    ]
   },
   {
     "id": 31,
@@ -173,7 +388,19 @@
     "alias": "Chogath",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/31.png",
     "roles": ["tank", "mage"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "014",
+      "023"
+    ]
   },
   {
     "id": 42,
@@ -181,7 +408,20 @@
     "alias": "Corki",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/42.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "018",
+      "026"
+    ]
   },
   {
     "id": 122,
@@ -189,7 +429,21 @@
     "alias": "Darius",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/122.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "008",
+      "014",
+      "015",
+      "016",
+      "024",
+      "033",
+      "043"
+    ]
   },
   {
     "id": 131,
@@ -197,7 +451,22 @@
     "alias": "Diana",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/131.png",
     "roles": ["fighter", "mage"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "011",
+      "012",
+      "018",
+      "025",
+      "026",
+      "027",
+      "037",
+      "047",
+      "054"
+    ]
   },
   {
     "id": 119,
@@ -205,7 +474,22 @@
     "alias": "Draven",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/119.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "012",
+      "013",
+      "020",
+      "029",
+      "039",
+      "048"
+    ]
   },
   {
     "id": 36,
@@ -213,7 +497,21 @@
     "alias": "DrMundo",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/36.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "021"
+    ]
   },
   {
     "id": 245,
@@ -221,7 +519,21 @@
     "alias": "Ekko",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/245.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "011",
+      "012",
+      "019",
+      "028",
+      "036",
+      "045",
+      "046",
+      "056"
+    ]
   },
   {
     "id": 60,
@@ -229,7 +541,18 @@
     "alias": "Elise",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/60.png",
     "roles": ["mage", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "015",
+      "024"
+    ]
   },
   {
     "id": 28,
@@ -237,7 +560,23 @@
     "alias": "Evelynn",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/28.png",
     "roles": ["assassin", "mage"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "015",
+      "024",
+      "031",
+      "032",
+      "042"
+    ]
   },
   {
     "id": 81,
@@ -245,7 +584,30 @@
     "alias": "Ezreal",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/81.png",
     "roles": ["marksman", "mage"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "018",
+      "019",
+      "020",
+      "021",
+      "022",
+      "023",
+      "025",
+      "033",
+      "043",
+      "044",
+      "054"
+    ]
   },
   {
     "id": 9,
@@ -253,7 +615,20 @@
     "alias": "Fiddlesticks",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/9.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "027"
+    ]
   },
   {
     "id": 114,
@@ -261,7 +636,24 @@
     "alias": "Fiora",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/114.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "022",
+      "023",
+      "031",
+      "041",
+      "050",
+      "051",
+      "060",
+      "069",
+      "080"
+    ]
   },
   {
     "id": 105,
@@ -269,7 +661,22 @@
     "alias": "Fizz",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/105.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "008",
+      "009",
+      "010",
+      "014",
+      "015",
+      "016",
+      "025",
+      "026"
+    ]
   },
   {
     "id": 3,
@@ -277,7 +684,19 @@
     "alias": "Galio",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/3.png",
     "roles": ["tank", "mage"],
-    "rolesPlayed": ["mid", "sup"]
+    "rolesPlayed": ["mid", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "013",
+      "019",
+      "028"
+    ]
   },
   {
     "id": 41,
@@ -285,7 +704,21 @@
     "alias": "Gangplank",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/41.png",
     "roles": ["fighter"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "014",
+      "021",
+      "023"
+    ]
   },
   {
     "id": 86,
@@ -293,7 +726,24 @@
     "alias": "Garen",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/86.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "013",
+      "014",
+      "022",
+      "023",
+      "024",
+      "033"
+    ]
   },
   {
     "id": 150,
@@ -301,7 +751,19 @@
     "alias": "Gnar",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/150.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "013",
+      "014",
+      "015",
+      "022",
+      "031"
+    ]
   },
   {
     "id": 79,
@@ -309,7 +771,22 @@
     "alias": "Gragas",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/79.png",
     "roles": ["fighter", "mage"],
-    "rolesPlayed": ["top", "jng", "mid"]
+    "rolesPlayed": ["top", "jng", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "020"
+    ]
   },
   {
     "id": 104,
@@ -317,7 +794,22 @@
     "alias": "Graves",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/104.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "014",
+      "018",
+      "025",
+      "035",
+      "042"
+    ]
   },
   {
     "id": 887,
@@ -325,7 +817,8 @@
     "alias": "Gwen",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/887.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": ["000", "001", "011", "020"]
   },
   {
     "id": 120,
@@ -333,7 +826,21 @@
     "alias": "Hecarim",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/120.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "014",
+      "022",
+      "031"
+    ]
   },
   {
     "id": 74,
@@ -341,7 +848,18 @@
     "alias": "Heimerdinger",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/74.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["top", "mid", "sup"]
+    "rolesPlayed": ["top", "mid", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "015",
+      "024"
+    ]
   },
   {
     "id": 910,
@@ -349,7 +867,8 @@
     "alias": "Hwei",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/910.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001"]
   },
   {
     "id": 420,
@@ -357,7 +876,8 @@
     "alias": "Illaoi",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/420.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "010", "018"]
   },
   {
     "id": 39,
@@ -365,7 +885,23 @@
     "alias": "Irelia",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/39.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "015",
+      "016",
+      "017",
+      "018",
+      "026",
+      "036",
+      "037"
+    ]
   },
   {
     "id": 427,
@@ -373,7 +909,8 @@
     "alias": "Ivern",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/427.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "011", "020"]
   },
   {
     "id": 40,
@@ -381,7 +918,25 @@
     "alias": "Janna",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/40.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "013",
+      "020",
+      "027",
+      "036",
+      "045",
+      "046",
+      "056"
+    ]
   },
   {
     "id": 59,
@@ -389,7 +944,23 @@
     "alias": "JarvanIV",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/59.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "011",
+      "021",
+      "030",
+      "035"
+    ]
   },
   {
     "id": 24,
@@ -397,7 +968,25 @@
     "alias": "Jax",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/24.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "012",
+      "013",
+      "014",
+      "020",
+      "021",
+      "022",
+      "032"
+    ]
   },
   {
     "id": 126,
@@ -405,7 +994,18 @@
     "alias": "Jayce",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/126.png",
     "roles": ["fighter", "marksman"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "015",
+      "024",
+      "025"
+    ]
   },
   {
     "id": 202,
@@ -413,7 +1013,20 @@
     "alias": "Jhin",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/202.png",
     "roles": ["marksman", "mage"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "014",
+      "023",
+      "025",
+      "036",
+      "037"
+    ]
   },
   {
     "id": 222,
@@ -421,7 +1034,22 @@
     "alias": "Jinx",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/222.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "012",
+      "013",
+      "020",
+      "029",
+      "037",
+      "038",
+      "040",
+      "051"
+    ]
   },
   {
     "id": 145,
@@ -429,7 +1057,22 @@
     "alias": "Kaisa",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/145.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "014",
+      "015",
+      "016",
+      "017",
+      "026",
+      "027",
+      "029",
+      "039",
+      "040",
+      "048",
+      "059"
+    ]
   },
   {
     "id": 429,
@@ -437,7 +1080,8 @@
     "alias": "Kalista",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/429.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": ["000", "001", "002", "003", "005", "014"]
   },
   {
     "id": 43,
@@ -445,7 +1089,23 @@
     "alias": "Karma",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/43.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "019",
+      "026",
+      "027",
+      "044",
+      "054"
+    ]
   },
   {
     "id": 30,
@@ -453,7 +1113,19 @@
     "alias": "Karthus",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/30.png",
     "roles": ["mage"],
-    "rolesPlayed": ["adc", "jng", "mid"]
+    "rolesPlayed": ["adc", "jng", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "009",
+      "010",
+      "017",
+      "026"
+    ]
   },
   {
     "id": 38,
@@ -461,7 +1133,19 @@
     "alias": "Kassadin",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/38.png",
     "roles": ["assassin", "mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "014",
+      "015",
+      "024"
+    ]
   },
   {
     "id": 55,
@@ -469,7 +1153,26 @@
     "alias": "Katarina",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/55.png",
     "roles": ["assassin", "mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "012",
+      "021",
+      "029",
+      "037",
+      "047",
+      "048"
+    ]
   },
   {
     "id": 10,
@@ -477,7 +1180,24 @@
     "alias": "Kayle",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/10.png",
     "roles": ["fighter", "support"],
-    "rolesPlayed": ["mid", "top"]
+    "rolesPlayed": ["mid", "top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "015",
+      "024",
+      "033",
+      "042",
+      "057"
+    ]
   },
   {
     "id": 141,
@@ -485,7 +1205,8 @@
     "alias": "Kayn",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/141.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "008", "009", "015", "020"]
   },
   {
     "id": 85,
@@ -493,7 +1214,20 @@
     "alias": "Kennen",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/85.png",
     "roles": ["mage", "marksman"],
-    "rolesPlayed": ["mid", "top"]
+    "rolesPlayed": ["mid", "top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "023",
+      "025"
+    ]
   },
   {
     "id": 121,
@@ -501,7 +1235,8 @@
     "alias": "Khazix",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/121.png",
     "roles": ["assassin"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "003", "004", "011", "060", "069"]
   },
   {
     "id": 203,
@@ -509,7 +1244,8 @@
     "alias": "Kindred",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/203.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "003", "012", "022", "023"]
   },
   {
     "id": 240,
@@ -517,7 +1253,8 @@
     "alias": "Kled",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/240.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "009", "018"]
   },
   {
     "id": 96,
@@ -525,7 +1262,24 @@
     "alias": "KogMaw",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/96.png",
     "roles": ["marksman", "mage"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "019",
+      "028",
+      "037",
+      "046"
+    ]
   },
   {
     "id": 897,
@@ -533,7 +1287,8 @@
     "alias": "KSante",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/897.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "008"]
   },
   {
     "id": 7,
@@ -541,7 +1296,22 @@
     "alias": "Leblanc",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/7.png",
     "roles": ["assassin", "mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "012",
+      "019",
+      "020",
+      "029",
+      "033",
+      "035",
+      "045"
+    ]
   },
   {
     "id": 64,
@@ -549,7 +1319,27 @@
     "alias": "LeeSin",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/64.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "012",
+      "027",
+      "028",
+      "029",
+      "031",
+      "039",
+      "041",
+      "051",
+      "052"
+    ]
   },
   {
     "id": 89,
@@ -557,7 +1347,25 @@
     "alias": "Leona",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/89.png",
     "roles": ["tank", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "008",
+      "009",
+      "010",
+      "011",
+      "012",
+      "021",
+      "022",
+      "023",
+      "033",
+      "034",
+      "050"
+    ]
   },
   {
     "id": 876,
@@ -565,7 +1373,8 @@
     "alias": "Lillia",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/876.png",
     "roles": ["fighter", "mage"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "010", "019"]
   },
   {
     "id": 127,
@@ -573,7 +1382,18 @@
     "alias": "Lissandra",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/127.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "012",
+      "023",
+      "033",
+      "034"
+    ]
   },
   {
     "id": 236,
@@ -581,7 +1401,22 @@
     "alias": "Lucian",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/236.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "006",
+      "007",
+      "008",
+      "009",
+      "018",
+      "019",
+      "025",
+      "031",
+      "040",
+      "052"
+    ]
   },
   {
     "id": 117,
@@ -589,7 +1424,22 @@
     "alias": "Lulu",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/117.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "014",
+      "015",
+      "026",
+      "027",
+      "037",
+      "046"
+    ]
   },
   {
     "id": 99,
@@ -597,7 +1447,29 @@
     "alias": "Lux",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/99.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["mid", "sup"]
+    "rolesPlayed": ["mid", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "014",
+      "015",
+      "016",
+      "017",
+      "018",
+      "019",
+      "029",
+      "038",
+      "039",
+      "040",
+      "042"
+    ]
   },
   {
     "id": 54,
@@ -605,7 +1477,23 @@
     "alias": "Malphite",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/54.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["sup", "top"]
+    "rolesPlayed": ["sup", "top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016",
+      "023",
+      "024",
+      "025",
+      "027",
+      "037"
+    ]
   },
   {
     "id": 90,
@@ -613,7 +1501,21 @@
     "alias": "Malzahar",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/90.png",
     "roles": ["mage", "assassin"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "009",
+      "018",
+      "028",
+      "038"
+    ]
   },
   {
     "id": 57,
@@ -621,7 +1523,20 @@
     "alias": "Maokai",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/57.png",
     "roles": ["tank", "mage"],
-    "rolesPlayed": ["jng", "sup", "top"]
+    "rolesPlayed": ["jng", "sup", "top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016",
+      "024",
+      "033"
+    ]
   },
   {
     "id": 11,
@@ -629,7 +1544,26 @@
     "alias": "MasterYi",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/11.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "009",
+      "010",
+      "011",
+      "017",
+      "024",
+      "033",
+      "042",
+      "052",
+      "053",
+      "089",
+      "096"
+    ]
   },
   {
     "id": 902,
@@ -637,7 +1571,8 @@
     "alias": "Milio",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/902.png",
     "roles": ["support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001"]
   },
   {
     "id": 21,
@@ -645,7 +1580,29 @@
     "alias": "MissFortune",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/21.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "015",
+      "016",
+      "017",
+      "018",
+      "020",
+      "021",
+      "031",
+      "033",
+      "040",
+      "041"
+    ]
   },
   {
     "id": 62,
@@ -653,7 +1610,18 @@
     "alias": "MonkeyKing",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/62.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016"
+    ]
   },
   {
     "id": 82,
@@ -661,7 +1629,21 @@
     "alias": "Mordekaiser",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/82.png",
     "roles": ["fighter"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "013",
+      "023",
+      "032",
+      "042",
+      "044"
+    ]
   },
   {
     "id": 25,
@@ -669,7 +1651,24 @@
     "alias": "Morgana",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/25.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "017",
+      "026",
+      "039",
+      "041",
+      "050",
+      "060"
+    ]
   },
   {
     "id": 950,
@@ -677,7 +1676,8 @@
     "alias": "Naafiri",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/950.png",
     "roles": ["assassin"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001"]
   },
   {
     "id": 267,
@@ -685,7 +1685,22 @@
     "alias": "Nami",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/267.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "007",
+      "008",
+      "009",
+      "015",
+      "024",
+      "032",
+      "041",
+      "042",
+      "051"
+    ]
   },
   {
     "id": 75,
@@ -693,7 +1708,22 @@
     "alias": "Nasus",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/75.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "016",
+      "025",
+      "035",
+      "045"
+    ]
   },
   {
     "id": 111,
@@ -701,7 +1731,19 @@
     "alias": "Nautilus",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/111.png",
     "roles": ["tank", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "009",
+      "018",
+      "027"
+    ]
   },
   {
     "id": 518,
@@ -709,7 +1751,8 @@
     "alias": "Neeko",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/518.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["sup", "mid"]
+    "rolesPlayed": ["sup", "mid"],
+    "splashCodes": ["000", "001", "010", "011", "012", "021", "022", "031"]
   },
   {
     "id": 76,
@@ -717,7 +1760,25 @@
     "alias": "Nidalee",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/76.png",
     "roles": ["assassin", "mage"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "011",
+      "018",
+      "027",
+      "029",
+      "039",
+      "048"
+    ]
   },
   {
     "id": 895,
@@ -725,7 +1786,8 @@
     "alias": "Nilah",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/895.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": ["000", "001", "011"]
   },
   {
     "id": 56,
@@ -733,7 +1795,19 @@
     "alias": "Nocturne",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/56.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016",
+      "017"
+    ]
   },
   {
     "id": 20,
@@ -741,7 +1815,21 @@
     "alias": "Nunu",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/20.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "016",
+      "026",
+      "035"
+    ]
   },
   {
     "id": 2,
@@ -749,7 +1837,20 @@
     "alias": "Olaf",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/2.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "015",
+      "016",
+      "025",
+      "035"
+    ]
   },
   {
     "id": 61,
@@ -757,7 +1858,21 @@
     "alias": "Orianna",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/61.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "011",
+      "020",
+      "029"
+    ]
   },
   {
     "id": 516,
@@ -765,7 +1880,8 @@
     "alias": "Ornn",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/516.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "011"]
   },
   {
     "id": 80,
@@ -773,7 +1889,22 @@
     "alias": "Pantheon",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/80.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top", "jng", "sup"]
+    "rolesPlayed": ["top", "jng", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "016",
+      "025",
+      "026",
+      "036"
+    ]
   },
   {
     "id": 78,
@@ -781,7 +1912,22 @@
     "alias": "Poppy",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/78.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "014",
+      "015",
+      "016",
+      "024",
+      "033"
+    ]
   },
   {
     "id": 555,
@@ -789,7 +1935,19 @@
     "alias": "Pyke",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/555.png",
     "roles": ["support", "assassin"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "009",
+      "016",
+      "025",
+      "034",
+      "044",
+      "045",
+      "053",
+      "054"
+    ]
   },
   {
     "id": 246,
@@ -797,7 +1955,18 @@
     "alias": "Qiyana",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/246.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "010",
+      "011",
+      "020",
+      "021",
+      "030",
+      "040"
+    ]
   },
   {
     "id": 133,
@@ -805,7 +1974,8 @@
     "alias": "Quinn",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/133.png",
     "roles": ["marksman", "assassin"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "014"]
   },
   {
     "id": 497,
@@ -813,7 +1983,21 @@
     "alias": "Rakan",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/497.png",
     "roles": ["support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "009",
+      "018",
+      "027",
+      "036",
+      "037",
+      "038"
+    ]
   },
   {
     "id": 33,
@@ -821,7 +2005,20 @@
     "alias": "Rammus",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/33.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "016",
+      "017"
+    ]
   },
   {
     "id": 421,
@@ -829,7 +2026,8 @@
     "alias": "RekSai",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/421.png",
     "roles": ["fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "009", "017"]
   },
   {
     "id": 526,
@@ -837,7 +2035,8 @@
     "alias": "Rell",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/526.png",
     "roles": ["tank", "support"],
-    "rolesPlayed": ["sup", "jng"]
+    "rolesPlayed": ["sup", "jng"],
+    "splashCodes": ["000", "001", "010"]
   },
   {
     "id": 888,
@@ -845,7 +2044,8 @@
     "alias": "Renata",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/888.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001", "010", "020", "021"]
   },
   {
     "id": 58,
@@ -853,7 +2053,24 @@
     "alias": "Renekton",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/58.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "017",
+      "018",
+      "026",
+      "033",
+      "042"
+    ]
   },
   {
     "id": 107,
@@ -861,7 +2078,18 @@
     "alias": "Rengar",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/107.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "008",
+      "015",
+      "023",
+      "030",
+      "040"
+    ]
   },
   {
     "id": 92,
@@ -869,7 +2097,27 @@
     "alias": "Riven",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/92.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["rop"]
+    "rolesPlayed": ["rop"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016",
+      "018",
+      "020",
+      "022",
+      "023",
+      "034",
+      "044",
+      "045",
+      "055",
+      "063"
+    ]
   },
   {
     "id": 68,
@@ -877,7 +2125,8 @@
     "alias": "Rumble",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/68.png",
     "roles": ["fighter", "mage"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": ["000", "001", "002", "003", "004", "013", "023"]
   },
   {
     "id": 13,
@@ -885,7 +2134,23 @@
     "alias": "Ryze",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/13.png",
     "roles": ["mage", "fighter"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "013",
+      "020"
+    ]
   },
   {
     "id": 360,
@@ -893,7 +2158,8 @@
     "alias": "Samira",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/360.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": ["000", "001", "010", "020", "030"]
   },
   {
     "id": 113,
@@ -901,7 +2167,22 @@
     "alias": "Sejuani",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/113.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "015",
+      "016",
+      "026",
+      "036"
+    ]
   },
   {
     "id": 235,
@@ -909,7 +2190,19 @@
     "alias": "Senna",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/235.png",
     "roles": ["marksman", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "009",
+      "010",
+      "016",
+      "026",
+      "027",
+      "036",
+      "046",
+      "056"
+    ]
   },
   {
     "id": 147,
@@ -917,7 +2210,8 @@
     "alias": "Seraphine",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/147.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["sup", "mid"]
+    "rolesPlayed": ["sup", "mid"],
+    "splashCodes": ["000", "001", "004", "014", "015", "024", "034"]
   },
   {
     "id": 875,
@@ -925,7 +2219,18 @@
     "alias": "Sett",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/875.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "008",
+      "009",
+      "010",
+      "019",
+      "038",
+      "045",
+      "056"
+    ]
   },
   {
     "id": 35,
@@ -933,7 +2238,23 @@
     "alias": "Shaco",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/35.png",
     "roles": ["assassin"],
-    "rolesPlayed": ["sup", "jng"]
+    "rolesPlayed": ["sup", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "015",
+      "023",
+      "033",
+      "043",
+      "044"
+    ]
   },
   {
     "id": 98,
@@ -941,7 +2262,21 @@
     "alias": "Shen",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/98.png",
     "roles": ["tank"],
-    "rolesPlayed": ["sup", "top", "jng"]
+    "rolesPlayed": ["sup", "top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "015",
+      "016",
+      "022",
+      "040",
+      "049"
+    ]
   },
   {
     "id": 102,
@@ -949,7 +2284,18 @@
     "alias": "Shyvana",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/102.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "008",
+      "017"
+    ]
   },
   {
     "id": 27,
@@ -957,7 +2303,21 @@
     "alias": "Singed",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/27.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "019"
+    ]
   },
   {
     "id": 14,
@@ -965,7 +2325,19 @@
     "alias": "Sion",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/14.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["top", "sup"]
+    "rolesPlayed": ["top", "sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "014",
+      "022",
+      "030",
+      "040"
+    ]
   },
   {
     "id": 15,
@@ -973,7 +2345,27 @@
     "alias": "Sivir",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/15.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "016",
+      "025",
+      "034",
+      "043",
+      "050",
+      "051",
+      "061"
+    ]
   },
   {
     "id": 72,
@@ -981,7 +2373,8 @@
     "alias": "Skarner",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/72.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005"]
   },
   {
     "id": 901,
@@ -989,7 +2382,8 @@
     "alias": "Smolder",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/901.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": ["000", "001"]
   },
   {
     "id": 37,
@@ -997,7 +2391,23 @@
     "alias": "Sona",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/37.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "009",
+      "017",
+      "026",
+      "035",
+      "045",
+      "046"
+    ]
   },
   {
     "id": 16,
@@ -1005,7 +2415,25 @@
     "alias": "Soraka",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/16.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "015",
+      "016",
+      "017",
+      "018",
+      "027",
+      "037"
+    ]
   },
   {
     "id": 50,
@@ -1013,7 +2441,8 @@
     "alias": "Swain",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/50.png",
     "roles": ["mage", "fighter"],
-    "rolesPlayed": ["sup", "top", "mid"]
+    "rolesPlayed": ["sup", "top", "mid"],
+    "splashCodes": ["000", "001", "002", "003", "004", "011", "012", "021"]
   },
   {
     "id": 517,
@@ -1021,7 +2450,8 @@
     "alias": "Sylas",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/517.png",
     "roles": ["mage", "assassin"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": ["000", "001", "008", "013", "014", "024", "034", "036"]
   },
   {
     "id": 134,
@@ -1029,7 +2459,22 @@
     "alias": "Syndra",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/134.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016",
+      "025",
+      "034",
+      "044",
+      "054"
+    ]
   },
   {
     "id": 223,
@@ -1037,7 +2482,8 @@
     "alias": "TahmKench",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/223.png",
     "roles": ["support", "tank"],
-    "rolesPlayed": ["sup", "top"]
+    "rolesPlayed": ["sup", "top"],
+    "splashCodes": ["000", "001", "002", "003", "011", "020", "030"]
   },
   {
     "id": 163,
@@ -1045,7 +2491,8 @@
     "alias": "Taliyah",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/163.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": ["000", "001", "002", "003", "011", "021"]
   },
   {
     "id": 91,
@@ -1053,7 +2500,21 @@
     "alias": "Talon",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/91.png",
     "roles": ["assassin"],
-    "rolesPlayed": ["mid", "jng"]
+    "rolesPlayed": ["mid", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "012",
+      "020",
+      "029",
+      "038",
+      "039",
+      "049"
+    ]
   },
   {
     "id": 44,
@@ -1061,7 +2522,8 @@
     "alias": "Taric",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/44.png",
     "roles": ["support", "fighter"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001", "002", "003", "004", "009", "018"]
   },
   {
     "id": 17,
@@ -1069,7 +2531,24 @@
     "alias": "Teemo",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/17.png",
     "roles": ["marksman", "assassin"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "014",
+      "018",
+      "025",
+      "027",
+      "037",
+      "047"
+    ]
   },
   {
     "id": 412,
@@ -1077,7 +2556,25 @@
     "alias": "Thresh",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/412.png",
     "roles": ["support", "fighter"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "013",
+      "014",
+      "015",
+      "017",
+      "027",
+      "028",
+      "038",
+      "039",
+      "049"
+    ]
   },
   {
     "id": 18,
@@ -1085,7 +2582,24 @@
     "alias": "Tristana",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/18.png",
     "roles": ["marksman", "assassin"],
-    "rolesPlayed": ["adc", "mid"]
+    "rolesPlayed": ["adc", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "012",
+      "024",
+      "033",
+      "040",
+      "041",
+      "051"
+    ]
   },
   {
     "id": 48,
@@ -1093,7 +2607,8 @@
     "alias": "Trundle",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/48.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "006", "012"]
   },
   {
     "id": 23,
@@ -1101,7 +2616,21 @@
     "alias": "Tryndamere",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/23.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "018"
+    ]
   },
   {
     "id": 4,
@@ -1109,7 +2638,25 @@
     "alias": "TwistedFate",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/4.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "013",
+      "023",
+      "025",
+      "036"
+    ]
   },
   {
     "id": 29,
@@ -1117,7 +2664,22 @@
     "alias": "Twitch",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/29.png",
     "roles": ["marksman", "assassin"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "012",
+      "027",
+      "036",
+      "045"
+    ]
   },
   {
     "id": 77,
@@ -1125,7 +2687,8 @@
     "alias": "Udyr",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/77.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "006"]
   },
   {
     "id": 6,
@@ -1133,7 +2696,8 @@
     "alias": "Urgot",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/6.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "003", "009", "015", "023"]
   },
   {
     "id": 110,
@@ -1141,7 +2705,22 @@
     "alias": "Varus",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/110.png",
     "roles": ["marksman", "mage"],
-    "rolesPlayed": ["adc", "mid"]
+    "rolesPlayed": ["adc", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "009",
+      "016",
+      "017",
+      "034",
+      "044"
+    ]
   },
   {
     "id": 67,
@@ -1149,7 +2728,27 @@
     "alias": "Vayne",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/67.png",
     "roles": ["marksman", "assassin"],
-    "rolesPlayed": ["adc", "top"]
+    "rolesPlayed": ["adc", "top"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "010",
+      "011",
+      "012",
+      "013",
+      "014",
+      "015",
+      "025",
+      "032",
+      "033",
+      "044",
+      "055"
+    ]
   },
   {
     "id": 45,
@@ -1157,7 +2756,24 @@
     "alias": "Veigar",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/45.png",
     "roles": ["mage"],
-    "rolesPlayed": ["sup", "mid", "adc"]
+    "rolesPlayed": ["sup", "mid", "adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "013",
+      "023",
+      "032",
+      "041",
+      "051"
+    ]
   },
   {
     "id": 161,
@@ -1165,7 +2781,8 @@
     "alias": "Velkoz",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/161.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid", "sup"]
+    "rolesPlayed": ["mid", "sup"],
+    "splashCodes": ["000", "001", "002", "003", "004", "011", "020"]
   },
   {
     "id": 711,
@@ -1173,7 +2790,8 @@
     "alias": "Vex",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/711.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001", "010"]
   },
   {
     "id": 254,
@@ -1181,7 +2799,21 @@
     "alias": "Vi",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/254.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "011",
+      "012",
+      "020",
+      "029",
+      "030",
+      "039"
+    ]
   },
   {
     "id": 234,
@@ -1189,7 +2821,8 @@
     "alias": "Viego",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/234.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": ["000", "001", "010", "019", "021", "030"]
   },
   {
     "id": 112,
@@ -1197,7 +2830,8 @@
     "alias": "Viktor",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/112.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "014"]
   },
   {
     "id": 8,
@@ -1205,7 +2839,22 @@
     "alias": "Vladimir",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/8.png",
     "roles": ["mage"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "014",
+      "021",
+      "030",
+      "039"
+    ]
   },
   {
     "id": 106,
@@ -1213,7 +2862,19 @@
     "alias": "Volibear",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/106.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "009",
+      "019"
+    ]
   },
   {
     "id": 19,
@@ -1221,7 +2882,24 @@
     "alias": "Warwick",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/19.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top", "jng"]
+    "rolesPlayed": ["top", "jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "016",
+      "035",
+      "045",
+      "046"
+    ]
   },
   {
     "id": 498,
@@ -1229,7 +2907,20 @@
     "alias": "Xayah",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/498.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "008",
+      "017",
+      "026",
+      "028",
+      "037",
+      "038"
+    ]
   },
   {
     "id": 101,
@@ -1237,7 +2928,8 @@
     "alias": "Xerath",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/101.png",
     "roles": ["mage"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "012", "021"]
   },
   {
     "id": 5,
@@ -1245,7 +2937,20 @@
     "alias": "XinZhao",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/5.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["jng"]
+    "rolesPlayed": ["jng"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "013",
+      "020",
+      "027",
+      "036"
+    ]
   },
   {
     "id": 157,
@@ -1253,7 +2958,25 @@
     "alias": "Yasuo",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/157.png",
     "roles": ["fighter", "assassin"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "009",
+      "010",
+      "017",
+      "018",
+      "035",
+      "036",
+      "045",
+      "054",
+      "055",
+      "056",
+      "057",
+      "068"
+    ]
   },
   {
     "id": 777,
@@ -1261,7 +2984,8 @@
     "alias": "Yone",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/777.png",
     "roles": ["assassin", "fighter"],
-    "rolesPlayed": ["top", "mid"]
+    "rolesPlayed": ["top", "mid"],
+    "splashCodes": ["000", "001", "010", "019", "026", "035", "045", "046"]
   },
   {
     "id": 83,
@@ -1269,7 +2993,8 @@
     "alias": "Yorick",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/83.png",
     "roles": ["fighter", "tank"],
-    "rolesPlayed": ["top"]
+    "rolesPlayed": ["top"],
+    "splashCodes": ["000", "001", "002", "003", "004", "012", "021", "030"]
   },
   {
     "id": 350,
@@ -1277,7 +3002,8 @@
     "alias": "Yuumi",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/350.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001", "011", "019", "028", "037", "039"]
   },
   {
     "id": 154,
@@ -1285,7 +3011,8 @@
     "alias": "Zac",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/154.png",
     "roles": ["tank", "fighter"],
-    "rolesPlayed": ["sup", "jng"]
+    "rolesPlayed": ["sup", "jng"],
+    "splashCodes": ["000", "001", "002", "006", "007", "014"]
   },
   {
     "id": 238,
@@ -1293,7 +3020,21 @@
     "alias": "Zed",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/238.png",
     "roles": ["assassin"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "010",
+      "011",
+      "013",
+      "015",
+      "030",
+      "031",
+      "038",
+      "049"
+    ]
   },
   {
     "id": 221,
@@ -1301,7 +3042,8 @@
     "alias": "Zeri",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/221.png",
     "roles": ["marksman"],
-    "rolesPlayed": ["adc"]
+    "rolesPlayed": ["adc"],
+    "splashCodes": ["000", "001", "010", "019"]
   },
   {
     "id": 115,
@@ -1309,7 +3051,21 @@
     "alias": "Ziggs",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/115.png",
     "roles": ["mage"],
-    "rolesPlayed": ["adc", "mid"]
+    "rolesPlayed": ["adc", "mid"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "014",
+      "023",
+      "024",
+      "033"
+    ]
   },
   {
     "id": 26,
@@ -1317,7 +3073,8 @@
     "alias": "Zilean",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/26.png",
     "roles": ["support", "mage"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": ["000", "001", "002", "003", "004", "005", "006", "014"]
   },
   {
     "id": 142,
@@ -1325,7 +3082,8 @@
     "alias": "Zoe",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/142.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["mid"]
+    "rolesPlayed": ["mid"],
+    "splashCodes": ["000", "001", "002", "009", "018", "019", "020", "022"]
   },
   {
     "id": 143,
@@ -1333,6 +3091,19 @@
     "alias": "Zyra",
     "squarePortraitPath": "/lol-game-data/assets/v1/champion-icons/143.png",
     "roles": ["mage", "support"],
-    "rolesPlayed": ["sup"]
+    "rolesPlayed": ["sup"],
+    "splashCodes": [
+      "000",
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "016",
+      "036",
+      "046"
+    ]
   }
 ]
