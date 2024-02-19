@@ -9,7 +9,7 @@ export default function BanImageLeft({
   return (
     <div
       className={
-        "relative h-8 w-8  md:h-[4.0vw] md:w-[4.5vw] mx-[0.5vw] shadow-inner overflow-hidden banImg rounded-tr-[30px] bg-[#011627] " +
+        "relative h-8 w-8  md:h-[4.0vw] md:w-[4.5vw] mx-[0.5vw] shadow-inner overflow-hidden banImg rounded-tr-[30px] bg-[#006788] " +
         (champ.id === undefined && champ?.active
           ? " border-white border banImg "
           : champ?.active
