@@ -33,11 +33,9 @@ export default function pickImageLeft({
         backgroundImage:
           champ.id === undefined
             ? ``
-            : `url("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/` +
+            : `url("https://cdn.communitydragon.org/latest/champion/` +
               champ.id +
-              `/` +
-              champ.id +
-              `000.jpg")`,
+              `/splash-art/centered/skin/0`,
       }}
     >
       <img
