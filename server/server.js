@@ -49,6 +49,22 @@ app.get("/random", (req, res) =>
   res.status(200).json({ message: generateRandomLink() })
 );
 
+let oldDay = 0;
+let randomWeaponDS1 = 1;
+const randomWeaponDS1generator = () => {
+  var currentDay = new Date().getDate();
+  if (currentDay == oldDay) {
+    return randomWeaponDS1;
+  } else {
+    oldDay = currentDay;
+    randomWeaponDS1 = Math.floor(Math.random() * 138);
+  }
+};
+
+app.get("/dailyWeaponDS1", (req, res) =>
+  res.status(200).json({ message: randomWeaponDS1generator() })
+);
+
 io.on("connection", (socket) => {
   console.log(`User connected: ${socket.id}`);
   socket.on("create_room", async (data) => {
