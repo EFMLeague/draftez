@@ -51,14 +51,16 @@ app.get("/random", (req, res) =>
 
 let oldDay = 1;
 let randomWeaponDS1 = 1;
+let prevWeapon = 0;
 const randomWeaponDS1generator = () => {
   var currentDay = new Date().getDate();
   if (currentDay == oldDay) {
-    return randomWeaponDS1;
+    return { oggi: randomWeaponDS1, ieri: prevWeapon };
   } else {
     oldDay = currentDay;
+    prevWeapon = randomWeaponDS1;
     randomWeaponDS1 = Math.floor(Math.random() * 139);
-    return randomWeaponDS1;
+    return { oggi: randomWeaponDS1, ieri: prevWeapon };
   }
 };
 
