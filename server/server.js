@@ -55,12 +55,12 @@ let prevWeapon = 0;
 const randomWeaponDS1generator = () => {
   var currentDay = new Date().getDate();
   if (currentDay == oldDay) {
-    return { oggi: randomWeaponDS1, ieri: prevWeapon };
+    return { oggi: randomWeaponDS1, ieri: prevWeapon, day: currentDay };
   } else {
     oldDay = currentDay;
     prevWeapon = randomWeaponDS1;
     randomWeaponDS1 = Math.floor(Math.random() * 139);
-    return { oggi: randomWeaponDS1, ieri: prevWeapon };
+    return { oggi: randomWeaponDS1, ieri: prevWeapon, day: currentDay };
   }
 };
 
