@@ -49,7 +49,7 @@ app.get("/random", (req, res) =>
   res.status(200).json({ message: generateRandomLink() })
 );
 
-let oldDay = 0;
+let oldDay = 1;
 let randomWeaponDS1 = 1;
 const randomWeaponDS1generator = () => {
   var currentDay = new Date().getDate();
@@ -57,7 +57,8 @@ const randomWeaponDS1generator = () => {
     return randomWeaponDS1;
   } else {
     oldDay = currentDay;
-    randomWeaponDS1 = Math.floor(Math.random() * 138);
+    randomWeaponDS1 = Math.floor(Math.random() * 139);
+    return randomWeaponDS1;
   }
 };
 
