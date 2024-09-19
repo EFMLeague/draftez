@@ -51,21 +51,35 @@ app.get("/random", (req, res) =>
 
 let oldDay = 1;
 let randomWeaponDS1 = 1;
-let prevWeapon = 0;
-const randomWeaponDS1generator = () => {
+let randomWeaponDS3 = 1;
+
+let prevWeaponDS1 = 0;
+let prevWeaponDS3 = 0;
+
+const randomNumberGenerator = () => {
   var currentDay = new Date().getDate();
   if (currentDay == oldDay) {
-    return { oggi: randomWeaponDS1, ieri: prevWeapon, day: currentDay };
+    return {
+      ds1: { weapon: { oggi: randomWeaponDS1, ieri: prevWeaponDS1 } },
+      ds3: { weapon: { oggi: randomWeaponDS3, ieri: prevWeaponDS3 } },
+      day: currentDay,
+    };
   } else {
     oldDay = currentDay;
-    prevWeapon = randomWeaponDS1;
+    prevWeaponDS1 = randomWeaponDS1;
     randomWeaponDS1 = Math.floor(Math.random() * 139);
-    return { oggi: randomWeaponDS1, ieri: prevWeapon, day: currentDay };
+    prevWeaponDS3 = randomWeaponDS3;
+    randomWeaponDS3 = Math.floor(Math.random() * 221);
+    return {
+      ds1: { weapon: { oggi: randomWeaponDS1, ieri: prevWeaponDS1 } },
+      ds3: { weapon: { oggi: randomWeaponDS3, ieri: prevWeaponDS3 } },
+      day: currentDay,
+    };
   }
 };
 
-app.get("/dailyWeaponDS1", (req, res) =>
-  res.status(200).json({ message: randomWeaponDS1generator() })
+app.get("/dailyNumbers", (req, res) =>
+  res.status(200).json({ message: randomNumberGenerator() })
 );
 
 io.on("connection", (socket) => {
