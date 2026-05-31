@@ -1,18 +1,16 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Socket, io } from "socket.io-client";
-import Image from "next/image";
-import champions from "../../public/champions/champion-summary.json" assert { type: "json" };
-import PickImage from "@/app/components/pickImageLeft";
-import BanImage from "@/app/components/banImageLeft";
 import { Howl } from "howler";
-import PickImageLeft from "@/app/components/pickImageLeft";
+import champions from "../../public/champions/champion-summary.json";
+import PickImageLeft from "../components/pickImageLeft";
 import PickImageRight from "../components/pickImageRight";
+import BanImageLeft from "../components/banImageLeft";
 import BanImageRight from "../components/banImageRight";
-import BanImageLeft from "@/app/components/banImageLeft";
 
-// const socket: Socket = io("http://localhost:3001", {});
-const socket: Socket = io("https://draftez.onrender.com", {});
+const socket: Socket = io(
+  import.meta.env.VITE_SOCKET_URL ?? "http://localhost:3001",
+  {}
+);
 
 const url = typeof window !== "undefined" ? window.location.href : "";
 const startIndex = url.lastIndexOf("/");
@@ -21,16 +19,22 @@ const endIndex = url.indexOf("#");
 var room = url.substring(startIndex + 1, endIndex + 1);
 var passwordSide = url.substring(endIndex + 1);
 
-if (room.length) socket.emit("join_room", { room, passwordSide });
-
-export default function page() {
+export default function Room() {
   const [side, setSide] = useState("spectator");
   const [filter, setFilter] = useState("");
   const [singleChampion, setSingleChampion] = useState("");
   const [selectedRole, setSelectedRole] = useState("");
   const [block, setBlock] = useState(false);
 
-  const version = "14.3.1";
+  const [version, setVersion] = useState("");
+
+  useEffect(() => {
+    fetch("https://ddragon.leagueoflegends.com/api/versions.json")
+      .then((res) => res.json())
+      .then((versions: string[]) => setVersion(versions[0]))
+      .catch((err) => console.error("Errore nel recupero della versione:", err));
+  }, []);
+
   type Champion = {
     id: number;
     name: string;
@@ -44,6 +48,16 @@ export default function page() {
   const extractID = (champ: string) => {
     const res = champions.find(({ alias }) => alias === champ);
     return res?.id;
+  };
+
+  // Precarica (e mette in cache nel browser) la splash art di un campione,
+  // così quando viene pickato/bannato appare subito senza "pop-in".
+  const preloadedSplashes = useRef<Set<number>>(new Set());
+  const preloadSplash = (id: number | undefined) => {
+    if (id === undefined || preloadedSplashes.current.has(id)) return;
+    preloadedSplashes.current.add(id);
+    const img = new window.Image();
+    img.src = `https://cdn.communitydragon.org/latest/champion/${id}/splash-art/centered/skin/0`;
   };
 
   const idChamp = () => {
@@ -87,16 +101,16 @@ export default function page() {
       banRed: [] as string[],
     },
     draftTurn: {
-      timer: "",
+      timer: 30,
       side: "",
     },
-    started: "false",
-    blueReady: "",
-    redReady: "",
+    started: false,
+    blueReady: false,
+    redReady: false,
     phase: 0,
     message: "",
     room: room,
-    confirm: "false",
+    confirm: false,
   });
 
   function play(src: string, type: string) {
@@ -193,10 +207,19 @@ export default function page() {
       if (data.blue === passwordSide) setSide("blue");
       if (data.red === passwordSide) setSide("red");
     });
+
+    // Entriamo nella stanza solo DOPO aver registrato il listener, così lo
+    // stato iniziale inviato dal server in risposta non viene perso.
+    if (room.length) socket.emit("join_room", { room, passwordSide });
+
+    // Cleanup: evita listener duplicati (StrictMode / remount).
+    return () => {
+      socket.off("message_received");
+    };
   }, [socket]);
 
   useEffect(() => {
-    if (checkPhaseImage() === true && messageReceived.started === "true") {
+    if (checkPhaseImage() === true && messageReceived.started) {
       setSingleChamp(singleChampion);
     }
   }, [singleChampion]);
@@ -205,13 +228,11 @@ export default function page() {
     let updatedMessageReceived = { ...messageReceived };
 
     if (side === "red") {
-      updatedMessageReceived.redReady =
-        messageReceived.redReady === "false" ? "true" : "false";
+      updatedMessageReceived.redReady = !messageReceived.redReady;
     }
 
     if (side === "blue") {
-      updatedMessageReceived.blueReady =
-        messageReceived.blueReady === "false" ? "true" : "false";
+      updatedMessageReceived.blueReady = !messageReceived.blueReady;
     }
 
     console.log(updatedMessageReceived);
@@ -221,6 +242,7 @@ export default function page() {
 
   const setSingleChamp = (championAlias: string) => {
     setSingleChampion(championAlias);
+    preloadSplash(extractID(championAlias));
     updateMessage(championAlias);
   };
 
@@ -233,20 +255,20 @@ export default function page() {
   };
 
   const checkSideButton = () => {
-    if (messageReceived.started === "false") {
+    if (!messageReceived.started) {
       if (side === "blue") {
-        if (messageReceived.blueReady === "false") return "ready";
+        if (!messageReceived.blueReady) return "ready";
         else return "waiting";
       }
       if (side === "red") {
-        if (messageReceived.redReady === "false") return "ready";
+        if (!messageReceived.redReady) return "ready";
         else return "waiting";
       }
       if (side === "spectator") {
         return "spectator";
       }
     }
-    if (messageReceived.started === "true") {
+    if (messageReceived.started) {
       if ([0, 2, 4, 6, 9, 10, 13, 15, 17, 18].includes(messageReceived.phase)) {
         if (side === "blue") return <p>pick</p>;
         if (side === "red") return <p>waiting</p>;
@@ -264,7 +286,10 @@ export default function page() {
     if (checkPhaseImage() === true && !block) {
       setBlock(true);
       let updatedMessageReceived = { ...messageReceived };
-      updatedMessageReceived.confirm = "true";
+      // Usa il campione selezionato localmente: non dipendiamo dall'eco del
+      // server per `message`, così una conferma rapida non invia un valore stale.
+      updatedMessageReceived.message = singleChampion;
+      updatedMessageReceived.confirm = true;
       setMessageReceived(updatedMessageReceived);
       socket.emit("send_pick", updatedMessageReceived);
     }
@@ -330,12 +355,12 @@ export default function page() {
   return (
     <div
       className={
-        "h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap transition-all background-draft "
+        "no-select h-screen min-h-screen w-full absolute top-0 overflow-hidden flex-wrap transition-all background-draft "
       }
     >
       <div className="w-full pt-4 flex h-[8%] justify-between ">
-        <div className="basis-1/3 md:basis-1/4 h-full bg-[#2ec4b6] relative flex justify-center items-center ">
-          <p className="text-[1rem] md:text-[2.3vw] pt-[0.5vw] px-4 text-center  text-black uppercase">
+        <div className="basis-1/3 md:basis-1/4 h-full bg-[#2ec4b6] relative flex justify-center items-center shadow-lg shadow-[#2ec4b6]/30">
+          <p className="text-[1rem] md:text-[2.3vw] pt-[0.5vw] px-4 text-center font-semibold tracking-wide text-black uppercase truncate">
             {messageReceived.draftNames.teamBlue}
           </p>
           <svg
@@ -351,8 +376,8 @@ export default function page() {
             </g>
           </svg>
         </div>
-        <div className="basis-1/3 md:basis-1/4 h-full pt-[0.5vw] bg-[#df2935] relative flex justify-center  items-center">
-          <p className="text-[1rem] md:text-[2.3vw] text-center px-4 text-white uppercase">
+        <div className="basis-1/3 md:basis-1/4 h-full pt-[0.5vw] bg-[#df2935] relative flex justify-center items-center shadow-lg shadow-[#df2935]/30">
+          <p className="text-[1rem] md:text-[2.3vw] text-center px-4 font-semibold tracking-wide text-white uppercase truncate">
             {messageReceived.draftNames.teamRed}
           </p>
           <svg
@@ -391,87 +416,107 @@ export default function page() {
         <div className="basis-3/5 mx-[2vw] ">
           <div className="flex justify-between items-center flex-wrap relative px-10 pt-[1vw]">
             <div className="flex">
-              <Image
+              <img
                 src={"/roles/top.png"}
                 alt=""
                 width={100}
                 height={100}
                 className={
-                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 transition-all duration-200 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "top"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("top")}
-              ></Image>
-              <Image
+              />
+              <img
                 src={"/roles/jng.png"}
                 alt=""
                 width={100}
                 height={100}
                 className={
-                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 transition-all duration-200 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "jng"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("jng")}
-              ></Image>
-              <Image
+              />
+              <img
                 src={"/roles/mid.png"}
                 alt=""
                 width={27}
                 height={27}
                 className={
-                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 transition-all duration-200 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "mid"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("mid")}
-              ></Image>
-              <Image
+              />
+              <img
                 src={"/roles/adc.png"}
                 alt=""
                 width={100}
                 height={100}
                 className={
-                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 transition-all duration-200 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "adc"
                     ? "brightness-100 scale-110"
                     : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("adc")}
-              ></Image>
-              <Image
+              />
+              <img
                 src={"/roles/sup.png"}
                 alt=""
                 width={100}
                 height={100}
                 className={
-                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 hover:brightness-100 hover:scale-110 " +
+                  "h-4 w-4 md:h-[1.5vw] md:w-[1.5vw] hover:cursor-pointer m-2 transition-all duration-200 hover:brightness-100 hover:scale-110 " +
                   (selectedRole === "sup"
                     ? "brightness-100 scale-110 "
                     : "brightness-[70%]")
                 }
                 onClick={() => handleSelectedRole("sup")}
-              ></Image>
+              />
             </div>
-            <p className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span className="text-[3vw] ">
-                {Number(messageReceived.draftTurn.timer) > 0
-                  ? messageReceived.draftTurn.timer
-                  : "0"}
-              </span>
-            </p>
-            <div className="flex justify-center items-center p-1 m-2 bg-white">
-              <img src="./icons8-ricerca-50.png" className="h-[1vw] px-2"></img>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              {(() => {
+                const t =
+                  messageReceived.draftTurn.timer > 0
+                    ? messageReceived.draftTurn.timer
+                    : 0;
+                const danger = messageReceived.started && t <= 10;
+                return (
+                  <span
+                    className={
+                      "flex items-center justify-center rounded-full font-bold tabular-nums text-white h-[3.6vw] w-[3.6vw] min-h-[44px] min-w-[44px] text-[2vw] border-2 transition-colors duration-300 " +
+                      (messageReceived.started
+                        ? danger
+                          ? "border-[#df2935] bg-[#df2935]/25 timer-pulse-danger "
+                          : "border-[#2ec4b6] bg-[#2ec4b6]/20 timer-pulse "
+                        : "border-white/40 bg-black/30 ")
+                    }
+                  >
+                    {t}
+                  </span>
+                );
+              })()}
+            </div>
+            <div className="flex justify-center items-center px-2 py-1 m-2 bg-white rounded-lg shadow-md ring-1 ring-black/10 focus-within:ring-2 focus-within:ring-[#2ec4b6] transition-all">
+              <img
+                src="/icons8-ricerca-50.png"
+                className="h-3 w-3 md:h-[1.1vw] md:w-[1.1vw] opacity-60 mr-1"
+                draggable={false}
+              ></img>
               <input
                 type="text"
-                placeholder="Filtra"
+                placeholder="Filtra campioni…"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="h-full outline-none text-[1vw] pl-2 pt-1 tracking-wider"
+                className="h-full bg-transparent outline-none text-sm md:text-[1vw] pl-1 tracking-wider"
               />
             </div>
           </div>
@@ -483,20 +528,22 @@ export default function page() {
                   alt=""
                   width={100}
                   height={100}
+                  draggable={false}
                   className={
-                    "h-[3rem] w-[3rem] md:h-[5.2vw] md:w-[5.2vw] hover:cursor-pointer m-1  " +
+                    "h-[3rem] w-[3rem] md:h-[5.2vw] md:w-[5.2vw] m-1 rounded-md transition-all duration-150 " +
                     (checkChampionPicked(champion.alias)
-                      ? "grayscale "
-                      : " hover:grayscale hover:border ") +
+                      ? "grayscale opacity-50 cursor-not-allowed "
+                      : "hover:cursor-pointer hover:scale-110 hover:ring-2 hover:ring-white hover:z-10 ") +
                     (singleChampion === champion.alias
-                      ? " grayscale border "
+                      ? " ring-2 ring-[#2ec4b6] scale-110 shadow-lg shadow-[#2ec4b6]/40 "
                       : " ")
                   }
                   key={champion.alias}
+                  onMouseEnter={() => preloadSplash(extractID(champion.alias))}
                   onClick={() => {
                     if (
                       checkPhaseImage() === true &&
-                      messageReceived.started === "true" &&
+                      messageReceived.started &&
                       checkChampionPicked(champion.alias) === false &&
                       block === false
                     ) {
@@ -549,14 +596,14 @@ export default function page() {
         <div className=" h-full basis-[20%] flex justify-center items-center">
           <button
             className={
-              "text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase text-white hover:cursor-pointer bordi-bottone mb-5 -tracking-tighter hover:bg-white hover:text-[#011627] " +
-              (singleChampion === "" && messageReceived.started === "true"
-                ? "pointer-events-none"
-                : "")
+              "text-[2.5vw] w-[12vw] p-[0.4vw] text-center uppercase font-semibold text-white bordi-bottone mb-5 -tracking-tighter " +
+              (singleChampion === "" && messageReceived.started
+                ? "pointer-events-none opacity-40 grayscale "
+                : "hover:cursor-pointer hover:bg-white hover:text-[#011627] hover:scale-105 active:scale-95 ")
             }
             onClick={() => {
               if (side != "spectator") {
-                if (messageReceived.started === "false") {
+                if (!messageReceived.started) {
                   toggleReady();
                 } else {
                   if (checkPhaseImage() === true && !block) {

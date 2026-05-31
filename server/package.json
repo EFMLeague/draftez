@@ -1,19 +1,21 @@
 {
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "helmet": "^7.1.0",
     "http": "^0.0.1-security",
     "socket.io": "^4.7.4",
-    "supabase": "^1.131.5"
+    "tsx": "^4.7.0"
   },
   "scripts": {
-    "dev": "nodemon server.js",
-    "build": "npm install"
+    "dev": "nodemon --watch server.ts --exec tsx server.ts",
+    "build": "tsc --noEmit",
+    "start": "tsx server.ts"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
   }
 }

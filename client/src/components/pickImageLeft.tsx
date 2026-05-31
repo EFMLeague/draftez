@@ -1,8 +1,4 @@
-import React from "react";
-
-import "../globals.css";
-
-export default function PickImageRight({
+export default function PickImageLeft({
   champ,
 }: {
   champ: {
@@ -24,22 +20,24 @@ export default function PickImageRight({
         (champ.id === undefined && champ?.active
           ? " h-[70%] transition-all duration-300 "
           : champ?.active && champ.id
-          ? " h-[70%] transition-all duration-300 pickImg"
+          ? " h-[70%] transition-all duration-300 "
           : champ.id
-          ? " pickImg bordi-pick-right "
-          : " pointer-events-none bordi-pick-right ")
+          ? " bordi-pick-left "
+          : " pointer-events-none bordi-pick-left ")
       }
-      style={{
-        backgroundImage:
-          champ.id === undefined
-            ? `url("https://res.cloudinary.com/dqpghflrm/image/upload/v1708104595/bg-empty-1_s1ybkn.png")`
-            : `url("https://cdn.communitydragon.org/latest/champion/` +
-              champ.id +
-              `/splash-art/centered/skin/0`,
-      }}
     >
+      {champ.id !== undefined && (
+        <div
+          key={champ.id}
+          className="absolute inset-0 pickImg splash-in"
+          style={{
+            backgroundImage: `url("https://cdn.communitydragon.org/latest/champion/${champ.id}/splash-art/centered/skin/0")`,
+          }}
+        />
+      )}
+
       <img
-        src="./bg-empty.png"
+        src="/bg-empty.png"
         className={
           "h-full w-full object-contain " +
           (champ.id === undefined ? " " : " hidden")
@@ -56,7 +54,7 @@ export default function PickImageRight({
         <p className=" text-[1.3rem] -tracking-tight uppercase "> counter</p>
       </div>
 
-      <p className="absolute right-2 bottom-0 text-gray-200 uppercase  -tracking-tight nameChampDraft ">
+      <p className="absolute left-2 bottom-0 text-gray-200 uppercase  -tracking-tight nameChampDraft ">
         {champ.champName}
       </p>
     </a>
