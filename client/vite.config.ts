@@ -1,8 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
-
-// Dev e preview girano sulla 3000 per restare allineati a docker-compose.
 export default defineConfig({
   plugins: [react()],
   resolve: {
